@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dashboard - Glass &amp; Frame Artisan</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#00162c",
+                        "primary-fixed-dim": "#a8c9f3",
+                        "on-primary-fixed": "#001d36",
+                        "primary-fixed": "#d1e4ff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface-variant": "#e5e2e1",
+                        "on-tertiary-container": "#ae8b46",
+                        "surface-container-high": "#ebe7e7",
+                        "secondary": "#005faf",
+                        "tertiary-container": "#382600",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#00315f",
+                        "tertiary-fixed": "#ffdea5",
+                        "primary-container": "#002b4d",
+                        "on-secondary-fixed-variant": "#004786",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#27496c",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#43474e",
+                        "on-surface": "#1c1b1b",
+                        "success-green": "#117B01",
+                        "secondary-container": "#479afd",
+                        "surface-tint": "#406185",
+                        "outline-variant": "#c3c6cf",
+                        "surface-container": "#f0edec",
+                        "secondary-fixed": "#d4e3ff",
+                        "surface": "#fcf9f8",
+                        "on-background": "#1c1b1b",
+                        "on-tertiary-fixed": "#261900",
+                        "on-error-container": "#93000a",
+                        "charcoal-bg": "#1A1C1E",
+                        "tertiary-fixed-dim": "#e9c176",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#313030",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#5d4201",
+                        "on-secondary-fixed": "#001c3a",
+                        "on-primary-container": "#7393bb",
+                        "outline": "#73777f",
+                        "glass-tint": "#F4F7F9",
+                        "surface-container-low": "#f6f3f2",
+                        "error": "#ba1a1a",
+                        "background": "#fcf9f8",
+                        "subtle-gray": "#777777",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e5e2e1",
+                        "tertiary": "#1e1300",
+                        "secondary-fixed-dim": "#a5c8ff",
+                        "surface-dim": "#dcd9d9",
+                        "surface-bright": "#fcf9f8",
+                        "inverse-primary": "#a8c9f3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px",
+                        "gutter-mobile": "16px",
+                        "gutter-desktop": "32px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Manrope"],
+                        "caption": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "label-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky bg-surface border-b border-outline-variant shadow-sm z-50">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-primary uppercase tracking-wider">
+                Glass &amp; Frame Artisan
+            </div>
+<div class="hidden md:flex space-x-8 font-body-md text-body-md text-on-surface-variant">
+<a class="hover:text-primary hover:bg-glass-tint transition-colors duration-200 px-3 py-2 rounded-md" href="#">Shop</a>
+<a class="hover:text-primary hover:bg-glass-tint transition-colors duration-200 px-3 py-2 rounded-md" href="#">Frames</a>
+<a class="hover:text-primary hover:bg-glass-tint transition-colors duration-200 px-3 py-2 rounded-md" href="#">Acrylics</a>
+<a class="hover:text-primary hover:bg-glass-tint transition-colors duration-200 px-3 py-2 rounded-md" href="#">Gallery</a>
+</div>
+<div class="flex items-center space-x-4 text-primary">
+<span class="material-symbols-outlined cursor-pointer hover:opacity-80 transition-opacity">shopping_cart</span>
+<span class="material-symbols-outlined cursor-pointer hover:opacity-80 transition-opacity">account_circle</span>
+</div>
+</div>
+</nav>
+<!-- Main Layout Grid -->
+<div class="flex-grow flex w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 gap-8">
+<!-- SideNavBar -->
+<aside class="w-64 flex-shrink-0 hidden lg:flex flex-col p-6 space-y-4 border-r border-outline-variant bg-surface-container-low left-0 sticky h-[calc(100vh-80px)] top-[80px]">
+<div class="mb-8">
+<img alt="User profile photo" class="w-16 h-16 rounded-full object-cover mb-4 border-2 border-surface-container-high" data-alt="A professional close-up portrait of a modern artisan or premium customer in a brightly lit, clean studio space. High key lighting, modern aesthetic, white and light grey background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdKBMFmsStfRZZGrOOsW9MFAi9CgCUxQ71mwaAzJQyTQ_7KGYtZdGC09nQOqM4P98ntlnrUQNS4uRIMFFtqS37jpB4jj4iPFHVoOBwTLI1lkj_cGY_kjw-eMTTjdT-05yhS_dtlvXl1cGqiRGfeBiFWOfSZd66JWEI6H6oCA8j9Qlwa5rtQkVaODRX8xf-uUMknjGcbqJel-mxJKWXmgnVD-F4hawhyw-mLuAqKRGjHTpKfDJG-MAPOg"/>
+<h2 class="font-headline-md text-headline-md text-primary">Alex Thompson</h2>
+<p class="font-label-md text-label-md text-on-surface-variant">Premium Member</p>
+</div>
+<nav class="flex-grow font-label-md text-label-md text-primary space-y-2">
+<a class="flex items-center space-x-3 p-3 mb-2 bg-secondary text-on-secondary rounded-lg hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span>Dashboard</span>
+</a>
+<a class="flex items-center space-x-3 p-3 mb-2 text-on-surface-variant hover:bg-surface-variant rounded-lg hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">history</span>
+<span>Order History</span>
+</a>
+<a class="flex items-center space-x-3 p-3 mb-2 text-on-surface-variant hover:bg-surface-variant rounded-lg hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">location_on</span>
+<span>Addresses</span>
+</a>
+<a class="flex items-center space-x-3 p-3 mb-2 text-on-surface-variant hover:bg-surface-variant rounded-lg hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span>Profile Settings</span>
+</a>
+<a class="flex items-center space-x-3 p-3 mb-2 text-on-surface-variant hover:bg-surface-variant rounded-lg hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">help</span>
+<span>Support</span>
+</a>
+</nav>
+<button class="w-full mt-auto py-3 bg-secondary text-on-secondary font-label-md text-label-md rounded-lg shadow-sm hover:bg-on-secondary-fixed-variant transition-colors duration-200">
+                New Frame Project
+            </button>
+</aside>
+<!-- Dashboard Content Canvas -->
+<main class="flex-grow flex flex-col space-y-8 min-w-0">
+<!-- Welcome Banner -->
+<section class="bg-surface-container-low rounded-xl p-8 border border-surface-variant shadow-sm relative overflow-hidden">
+<div class="relative z-10">
+<h1 class="font-display-lg text-display-lg text-primary mb-2">Welcome back, Alex.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Manage your premium framing projects, track shipments, and explore artisan collections curated just for you.</p>
+</div>
+<div class="absolute right-0 top-0 w-1/3 h-full opacity-10 bg-gradient-to-l from-secondary to-transparent pointer-events-none"></div>
+</section>
+<!-- Quick Stats Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Stat Card 1 -->
+<div class="bg-surface border border-outline-variant rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between items-start group">
+<div class="p-3 bg-glass-tint rounded-full text-secondary mb-4 group-hover:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">package_2</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Active Orders</p>
+<p class="font-headline-lg text-headline-lg text-primary">1</p>
+</div>
+</div>
+<!-- Stat Card 2 -->
+<div class="bg-surface border border-outline-variant rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between items-start group">
+<div class="p-3 bg-glass-tint rounded-full text-on-tertiary-container mb-4 group-hover:bg-tertiary-fixed transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">loyalty</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Reward Points</p>
+<p class="font-headline-lg text-headline-lg text-primary">450</p>
+</div>
+</div>
+<!-- Stat Card 3 -->
+<div class="bg-surface border border-outline-variant rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between items-start group">
+<div class="p-3 bg-glass-tint rounded-full text-primary mb-4 group-hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Saved Items</p>
+<p class="font-headline-lg text-headline-lg text-primary">12</p>
+</div>
+</div>
+</section>
+<!-- Recent Orders Table -->
+<section class="bg-surface border border-outline-variant rounded-xl shadow-sm overflow-hidden">
+<div class="px-6 py-5 border-b border-surface-variant flex justify-between items-center bg-glass-tint">
+<h3 class="font-headline-md text-headline-md text-primary">Recent Orders</h3>
+<a class="font-label-md text-label-md text-secondary hover:underline" href="#">View All</a>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-surface-variant font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">
+<th class="px-6 py-4 font-medium">Order ID</th>
+<th class="px-6 py-4 font-medium">Date</th>
+<th class="px-6 py-4 font-medium">Status</th>
+<th class="px-6 py-4 font-medium text-right">Total</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface divide-y divide-surface-variant">
+<tr class="hover:bg-glass-tint transition-colors">
+<td class="px-6 py-4 font-medium text-primary">#GFA-8892</td>
+<td class="px-6 py-4 text-on-surface-variant">Oct 12, 2024</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-success-green/10 text-success-green">
+                                        Shipped
+                                    </span>
+</td>
+<td class="px-6 py-4 text-right font-medium">$345.00</td>
+</tr>
+<tr class="hover:bg-glass-tint transition-colors">
+<td class="px-6 py-4 font-medium text-primary">#GFA-8741</td>
+<td class="px-6 py-4 text-on-surface-variant">Sep 28, 2024</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-surface-variant text-on-surface-variant">
+                                        Delivered
+                                    </span>
+</td>
+<td class="px-6 py-4 text-right font-medium">$890.50</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Recommended for You -->
+<section class="pt-4">
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Recommended for You</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Product Card 1 -->
+<div class="group bg-surface border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A highly detailed close-up of a premium minimalist aluminum floating picture frame with museum-quality anti-glare glass. The frame is presented against a crisp white gallery wall, illuminated by soft natural light. Artisan clarity aesthetic, high contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA88rtnmNJp5b-j5RE1XaCjfqOMjWuMINhITCltYp0vkHMHGtsPfmejPGS_Nkqe9aysXbHFJaazFo2F2ude2h-V2wVhRDRdQc5-T6DLOSwEvl6gijQJI4LQG3ScELdaVF5jTAZ3ksBVKTezYkpy_N6wMFi47q1iVn4aCUOhwOoziBMmP4yvfCFnOyCiKWmc1CGch8Kw35q1zw6FdtXl19PWGUoSEExdrMTJEU7zF8xeVxEetjSRX0WVHg"/>
+<button class="absolute top-3 right-3 p-2 bg-surface/80 backdrop-blur-md rounded-full text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<div class="p-5 flex-grow flex flex-col justify-between">
+<div>
+<h4 class="font-label-md text-label-md font-bold text-primary mb-1">Museum Acrylic Float</h4>
+<p class="font-caption text-caption text-on-surface-variant line-clamp-2 mb-3">Premium optical clarity with polished edges for a modern gallery aesthetic.</p>
+</div>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-body-md text-body-md font-semibold text-primary">From $129</span>
+<button class="text-secondary hover:text-on-secondary-fixed-variant transition-colors font-label-md text-label-md flex items-center gap-1">
+                                    Configure <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group bg-surface border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A beautiful detail shot of a solid walnut wood picture frame corner joint. The craftsmanship is evident, smooth finish, sitting on a clean white surface with subtle studio lighting highlighting the wood grain. Artisan premium quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTU1w3e1drs-puxGpxx4FP7lJeZSlInvM2w20CuQbR1J5ZI0voxwBQqkyMA89EcLUssnR_WFY-TlN2CP1KCa7zYiaL9by35_LY9YWxN-QZIIjabLd3HkaIFNdu8jRTmIHbW7yxfCda0P2semY9pa_9Qg3CA7le7NIQKajbyya3H3C_L-WwVGlrvZbeXwrOp54v7P57uj9_wipxlWq2GLmmThMP7XjhEbsFruDcmdQMrRN4BqIVKGJdtQ"/>
+<button class="absolute top-3 right-3 p-2 bg-surface/80 backdrop-blur-md rounded-full text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<div class="p-5 flex-grow flex flex-col justify-between">
+<div>
+<h4 class="font-label-md text-label-md font-bold text-primary mb-1">Classic Walnut Profile</h4>
+<p class="font-caption text-caption text-on-surface-variant line-clamp-2 mb-3">Hand-finished solid walnut with a deep profile, perfect for canvas works.</p>
+</div>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-body-md text-body-md font-semibold text-primary">From $85</span>
+<button class="text-secondary hover:text-on-secondary-fixed-variant transition-colors font-label-md text-label-md flex items-center gap-1">
+                                    Configure <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 (Hidden on small, visible on lg) -->
+<div class="hidden lg:flex group bg-surface border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex-col">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sleek, matte black metal gallery frame leaning against a white studio backdrop. It holds a crisp black and white typography print. The lighting is sharp and modern, emphasizing the clean lines and premium minimalist design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6uSxTL4uF-BIa2sC8IRQF34IMhOtBOw4a4fTM_VHBfy2zgzM5lJRLVdVo-D4dyY7PnWP0NO0QbWT6x_7yfBd9KdT54DPu4cqVYPL5XBTWzJVe-06HyPj2Rtcb5BkWFF-osiEIQTl3KLa2B-lFE15ILtYER0aAlVVwwAtLx5vstjWWnRKBmMbi2DxtMMeHVZj0lzuKVAAZ-OhRuNQcuHHt4Yk_4E7I_eEZT7Rz7v32Ev3q52bGFvupCw"/>
+<button class="absolute top-3 right-3 p-2 bg-surface/80 backdrop-blur-md rounded-full text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<div class="p-5 flex-grow flex flex-col justify-between">
+<div>
+<h4 class="font-label-md text-label-md font-bold text-primary mb-1">Matte Black Gallery</h4>
+<p class="font-caption text-caption text-on-surface-variant line-clamp-2 mb-3">Ultra-slim aluminum profile favored by contemporary art spaces.</p>
+</div>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-body-md text-body-md font-semibold text-primary">From $60</span>
+<button class="text-secondary hover:text-on-secondary-fixed-variant transition-colors font-label-md text-label-md flex items-center gap-1">
+                                    Configure <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-primary text-on-primary">
+<div class="w-full py-8 px-margin-desktop flex flex-col md:flex-row justify-between items-center border-t border-primary-container max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-on-primary mb-4 md:mb-0">
+                Glass &amp; Frame Artisan
+            </div>
+<div class="flex flex-wrap justify-center gap-6 font-caption text-caption">
+<a class="text-primary-fixed-dim opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-colors cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-primary-fixed-dim opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-colors cursor-pointer" href="#">Terms of Service</a>
+<a class="text-primary-fixed-dim opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-colors cursor-pointer" href="#">Shipping Info</a>
+<a class="text-primary-fixed-dim opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-colors cursor-pointer" href="#">Returns</a>
+</div>
+<div class="font-caption text-caption text-primary-fixed-dim mt-4 md:mt-0 opacity-80">
+                © 2024 Glass &amp; Frame Artisan. Handcrafted Quality.
+            </div>
+</div>
+</footer>
+</body></html>

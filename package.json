@@ -1,0 +1,10 @@
+{
+  "name": "quality-glass-emporium",
+  "version": "1.0.0",
+  "description": "Quality Glass Emporium Storefront & Vercel API",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.23.0"
+  }
+}

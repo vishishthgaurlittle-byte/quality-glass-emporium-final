@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shipping &amp; Taxes - Quality Glass Emporium</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-secondary": "#ffffff",
+                "success-green": "#117B01",
+                "on-primary-fixed": "#001d36",
+                "surface-bright": "#fcf9f8",
+                "primary-fixed": "#d1e4ff",
+                "tertiary-fixed": "#ffdea5",
+                "error": "#ba1a1a",
+                "on-tertiary-fixed": "#261900",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed-dim": "#a8c9f3",
+                "on-surface": "#1c1b1b",
+                "tertiary-fixed-dim": "#e9c176",
+                "on-secondary-fixed-variant": "#004786",
+                "on-tertiary-fixed-variant": "#5d4201",
+                "surface-container-low": "#f6f3f2",
+                "on-tertiary-container": "#ae8b46",
+                "on-secondary-container": "#00315f",
+                "charcoal-bg": "#1A1C1E",
+                "surface-container-highest": "#e5e2e1",
+                "inverse-on-surface": "#f3f0ef",
+                "outline": "#73777f",
+                "surface-variant": "#e5e2e1",
+                "primary-container": "#002b4d",
+                "on-surface-variant": "#43474e",
+                "subtle-gray": "#777777",
+                "secondary-fixed": "#d4e3ff",
+                "surface-tint": "#406185",
+                "outline-variant": "#c3c6cf",
+                "on-primary": "#ffffff",
+                "surface-container-high": "#ebe7e7",
+                "inverse-primary": "#a8c9f3",
+                "on-primary-container": "#7393bb",
+                "on-error-container": "#93000a",
+                "surface": "#fcf9f8",
+                "surface-container": "#f0edec",
+                "on-secondary-fixed": "#001c3a",
+                "primary": "#00162c",
+                "tertiary": "#1e1300",
+                "on-background": "#1c1b1b",
+                "inverse-surface": "#313030",
+                "on-primary-fixed-variant": "#27496c",
+                "secondary-fixed-dim": "#a5c8ff",
+                "glass-tint": "#F4F7F9",
+                "secondary": "#005faf",
+                "error-container": "#ffdad6",
+                "on-error": "#ffffff",
+                "secondary-container": "#479afd",
+                "background": "#fcf9f8",
+                "on-tertiary": "#ffffff",
+                "surface-dim": "#dcd9d9",
+                "tertiary-container": "#382600"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "gutter-mobile": "16px",
+                "margin-desktop": "64px",
+                "margin-mobile": "20px",
+                "unit": "8px",
+                "gutter-desktop": "32px",
+                "container-max": "1280px"
+        },
+        "fontFamily": {
+                "headline-lg-mobile": [
+                        "Manrope"
+                ],
+                "headline-md": [
+                        "Manrope"
+                ],
+                "body-md": [
+                        "Manrope"
+                ],
+                "label-md": [
+                        "Manrope"
+                ],
+                "body-lg": [
+                        "Manrope"
+                ],
+                "caption": [
+                        "Manrope"
+                ],
+                "headline-lg": [
+                        "Manrope"
+                ],
+                "display-lg": [
+                        "Manrope"
+                ]
+        },
+        "fontSize": {
+                "headline-lg-mobile": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.01em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "caption": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #fcf9f8;
+            color: #1c1b1b;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(244, 247, 249, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(195, 198, 207, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased flex h-screen overflow-hidden">
+<!-- NavigationDrawer -->
+<aside class="w-72 bg-surface-container-low shadow-md flex flex-col shrink-0 h-screen overflow-y-auto fixed left-0 top-0 z-40 hidden md:flex border-r border-outline-variant/20">
+<div class="p-6">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-[10px] font-bold tracking-widest uppercase bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">Secure Control Panel</span>
+<span class="text-[10px] font-bold tracking-widest uppercase bg-success-green/10 text-success-green px-2 py-0.5 rounded border border-success-green/20">Developer</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-primary mt-4 mb-2">Quality Glass Emporium</h1>
+<p class="text-xs text-on-surface-variant font-mono">@ADMIN_PORTAL_2024</p>
+</div>
+<nav class="flex-1 px-4 space-y-1 overflow-y-auto">
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">dashboard</span>
+<span class="text-sm">Dashboard Overview</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">edit_note</span>
+<span class="text-sm">Edit Main Page Website</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">inventory_2</span>
+<span class="text-sm">Products &amp; Pricing</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">category</span>
+<span class="text-sm">Categories Taxonomy</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">local_shipping</span>
+<span class="text-sm">Orders &amp; Logistics</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">confirmation_number</span>
+<span class="text-sm">Coupons &amp; Discounts</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">view_carousel</span>
+<span class="text-sm">Banners &amp; Carousels</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+<span class="text-sm">Reviews Moderation</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">group</span>
+<span class="text-sm">Customer Accounts</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">payments</span>
+<span class="text-sm">Payment Gateways</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full bg-secondary-container text-on-secondary-container font-label-md transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shipping</span>
+<span class="text-sm font-semibold">Shipping &amp; Taxes</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+<span class="text-sm">SEO &amp; Meta Settings</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">storefront</span>
+<span class="text-sm">Branding &amp; Store Info</span>
+</a>
+</nav>
+<div class="p-4 mt-8 border-t border-outline-variant/30 space-y-2">
+<a class="flex items-center justify-center gap-2 w-full py-2.5 rounded-full border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all font-label-md" href="#">
+<span class="material-symbols-outlined text-sm">visibility</span>
+                    View Live Customer Site
+                </a>
+<button class="flex items-center gap-2 w-full px-4 py-2.5 text-error hover:bg-error-container/50 rounded-full transition-all font-label-md">
+<span class="material-symbols-outlined">logout</span>
+                    Log Out Admin
+                </button>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 ml-0 md:ml-72 flex flex-col h-screen overflow-hidden bg-background">
+<!-- TopAppBar (Shared Component for Mobile) -->
+<header class="md:hidden bg-surface dark:bg-inverse-surface w-full top-0 sticky bg-glass-tint/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm flex justify-between items-center px-4 py-3 w-full z-30">
+<button class="text-secondary dark:text-secondary-fixed-dim cursor-pointer active:opacity-80 transition-all">
+<span class="material-symbols-outlined text-2xl" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Quality Glass Emporium</h1>
+<button class="text-secondary dark:text-secondary-fixed-dim cursor-pointer active:opacity-80 transition-all">
+<span class="material-symbols-outlined text-2xl" data-icon="dark_mode">dark_mode</span>
+</button>
+</header>
+<div class="flex-1 overflow-y-auto p-margin-mobile md:p-margin-desktop"><div class="max-w-container-max mx-auto w-full">
+<div class="mb-8">
+<h2 class="font-display-lg text-display-lg text-primary mb-2">Shipping &amp; Taxes</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Configure logistics, delivery zones, and tax compliance for your storefront.</p>
+</div>
+<!-- Bento Grid Layout for Settings -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Left Column: Primary Settings -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<!-- Shipping Zones & Rates Glass Card -->
+<section class="glass-panel rounded-xl p-6 shadow-sm">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="local_shipping">local_shipping</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Shipping Zones &amp; Rates</h3>
+</div>
+<div class="space-y-4">
+<!-- Zone 1 -->
+<div class="border border-outline-variant rounded-lg p-4 bg-surface hover:border-secondary transition-colors cursor-pointer">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Domestic (US)</h4>
+<p class="font-caption text-caption text-on-surface-variant">All 50 states and territories</p>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-2 py-1 rounded text-xs font-bold">Active</span>
+</div>
+<div class="flex items-center gap-4 mt-3 pt-3 border-t border-surface-variant">
+<div class="flex-1">
+<span class="font-caption text-caption text-subtle-gray block">Standard Flat Rate</span>
+<span class="font-body-md text-body-md font-medium">$12.00</span>
+</div>
+<div class="flex-1">
+<span class="font-caption text-caption text-subtle-gray block">Expedited</span>
+<span class="font-body-md text-body-md font-medium">$25.00</span>
+</div>
+<button class="text-secondary hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="edit">edit</span>
+</button>
+</div>
+</div>
+<!-- Zone 2 -->
+<div class="border border-outline-variant rounded-lg p-4 bg-surface hover:border-secondary transition-colors cursor-pointer">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface">International (EU &amp; UK)</h4>
+<p class="font-caption text-caption text-on-surface-variant">Selected European countries</p>
+</div>
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 rounded text-xs font-bold">Draft</span>
+</div>
+<div class="flex items-center gap-4 mt-3 pt-3 border-t border-surface-variant">
+<div class="flex-1">
+<span class="font-caption text-caption text-subtle-gray block">Standard Flat Rate</span>
+<span class="font-body-md text-body-md font-medium">$45.00</span>
+</div>
+<button class="text-secondary hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="edit">edit</span>
+</button>
+</div>
+</div>
+<button class="w-full py-3 border-2 border-dashed border-outline-variant rounded-lg text-secondary font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2 mt-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="add">add</span>
+                                Add New Shipping Zone
+                            </button>
+</div>
+</section>
+<!-- Free Shipping Thresholds -->
+<section class="bg-surface rounded-xl p-6 shadow-sm border border-outline-variant/30">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-full bg-success-green/10 text-success-green flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="redeem">redeem</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary">Free Shipping Thresholds</h3>
+<p class="font-caption text-caption text-subtle-gray">Encourage larger orders by waiving shipping fees.</p>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-low rounded-lg border border-outline-variant/50">
+<div>
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="form-checkbox h-5 w-5 text-secondary border-outline-variant rounded focus:ring-secondary focus:ring-2" type="checkbox"/>
+<span class="font-label-md text-label-md text-on-surface">Enable Free Domestic Shipping</span>
+</label>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md text-on-surface-variant">on orders over</span>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 text-subtle-gray">$</span>
+<input class="pl-7 pr-3 py-2 w-24 border border-outline-variant rounded bg-surface focus:border-secondary focus:ring-1 focus:ring-secondary outline-none text-right font-body-md text-body-md" type="number" value="150"/>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Tax Settings & Summary -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<!-- Regional Taxes -->
+<section class="glass-panel rounded-xl p-6 shadow-sm">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="request_quote">request_quote</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Regional Taxes</h3>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Auto-calculate taxes</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<hr class="border-surface-variant"/>
+<h4 class="font-label-md text-label-md font-bold text-on-surface mb-2">Base Tax Regions</h4>
+<div class="flex justify-between items-center py-2">
+<span class="font-body-md text-body-md text-on-surface-variant">California (CA)</span>
+<span class="font-label-md text-label-md bg-surface-container-high px-2 py-1 rounded">7.25%</span>
+</div>
+<div class="flex justify-between items-center py-2">
+<span class="font-body-md text-body-md text-on-surface-variant">New York (NY)</span>
+<span class="font-label-md text-label-md bg-surface-container-high px-2 py-1 rounded">4.00%</span>
+</div>
+<div class="flex justify-between items-center py-2">
+<span class="font-body-md text-body-md text-on-surface-variant">Texas (TX)</span>
+<span class="font-label-md text-label-md bg-surface-container-high px-2 py-1 rounded">6.25%</span>
+</div>
+<button class="text-secondary font-label-md text-label-md hover:underline flex items-center gap-1 mt-2">
+<span class="material-symbols-outlined text-[16px]" data-icon="manage_search">manage_search</span>
+                                Manage Tax Nexus
+                            </button>
+</div>
+</section>
+<!-- Save Actions -->
+<div class="bg-surface p-4 rounded-xl shadow-sm border border-outline-variant/30 sticky top-24">
+<p class="font-caption text-caption text-subtle-gray mb-4">Unsaved changes to shipping zones and free shipping thresholds.</p>
+<div class="flex flex-col gap-3">
+<button class="w-full bg-secondary text-on-secondary font-label-md text-label-md py-3 rounded-lg hover:bg-secondary/90 transition-colors shadow-sm">
+                                Save Settings
+                            </button>
+<button class="w-full border border-outline-variant text-primary font-label-md text-label-md py-3 rounded-lg hover:bg-surface-container-low transition-colors">
+                                Discard Changes
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</main>
+</body></html>

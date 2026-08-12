@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Categories Taxonomy - Quality Glass Emporium</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-secondary": "#ffffff",
+                "success-green": "#117B01",
+                "on-primary-fixed": "#001d36",
+                "surface-bright": "#fcf9f8",
+                "primary-fixed": "#d1e4ff",
+                "tertiary-fixed": "#ffdea5",
+                "error": "#ba1a1a",
+                "on-tertiary-fixed": "#261900",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed-dim": "#a8c9f3",
+                "on-surface": "#1c1b1b",
+                "tertiary-fixed-dim": "#e9c176",
+                "on-secondary-fixed-variant": "#004786",
+                "on-tertiary-fixed-variant": "#5d4201",
+                "surface-container-low": "#f6f3f2",
+                "on-tertiary-container": "#ae8b46",
+                "on-secondary-container": "#00315f",
+                "charcoal-bg": "#1A1C1E",
+                "surface-container-highest": "#e5e2e1",
+                "inverse-on-surface": "#f3f0ef",
+                "outline": "#73777f",
+                "surface-variant": "#e5e2e1",
+                "primary-container": "#002b4d",
+                "on-surface-variant": "#43474e",
+                "subtle-gray": "#777777",
+                "secondary-fixed": "#d4e3ff",
+                "surface-tint": "#406185",
+                "outline-variant": "#c3c6cf",
+                "on-primary": "#ffffff",
+                "surface-container-high": "#ebe7e7",
+                "inverse-primary": "#a8c9f3",
+                "on-primary-container": "#7393bb",
+                "on-error-container": "#93000a",
+                "surface": "#fcf9f8",
+                "surface-container": "#f0edec",
+                "on-secondary-fixed": "#001c3a",
+                "primary": "#00162c",
+                "tertiary": "#1e1300",
+                "on-background": "#1c1b1b",
+                "inverse-surface": "#313030",
+                "on-primary-fixed-variant": "#27496c",
+                "secondary-fixed-dim": "#a5c8ff",
+                "glass-tint": "#F4F7F9",
+                "secondary": "#005faf",
+                "error-container": "#ffdad6",
+                "on-error": "#ffffff",
+                "secondary-container": "#479afd",
+                "background": "#fcf9f8",
+                "on-tertiary": "#ffffff",
+                "surface-dim": "#dcd9d9",
+                "tertiary-container": "#382600"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "gutter-mobile": "16px",
+                "margin-desktop": "64px",
+                "margin-mobile": "20px",
+                "unit": "8px",
+                "gutter-desktop": "32px",
+                "container-max": "1280px"
+        },
+        "fontFamily": {
+                "headline-lg-mobile": [
+                        "Manrope"
+                ],
+                "headline-md": [
+                        "Manrope"
+                ],
+                "body-md": [
+                        "Manrope"
+                ],
+                "label-md": [
+                        "Manrope"
+                ],
+                "body-lg": [
+                        "Manrope"
+                ],
+                "caption": [
+                        "Manrope"
+                ],
+                "headline-lg": [
+                        "Manrope"
+                ],
+                "display-lg": [
+                        "Manrope"
+                ]
+        },
+        "fontSize": {
+                "headline-lg-mobile": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.01em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "caption": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .glass-effect {
+            background: rgba(244, 247, 249, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #c3c6cf;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex">
+<!-- NavigationDrawer -->
+<aside class="w-72 bg-surface-container-low shadow-md flex flex-col shrink-0 h-screen overflow-y-auto fixed left-0 top-0 z-40 hidden md:flex border-r border-outline-variant/20">
+<div class="p-6">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-[10px] font-bold tracking-widest uppercase bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">Secure Control Panel</span>
+<span class="text-[10px] font-bold tracking-widest uppercase bg-success-green/10 text-success-green px-2 py-0.5 rounded border border-success-green/20">Developer</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-primary mt-4 mb-2">Quality Glass Emporium</h1>
+<p class="text-xs text-on-surface-variant font-mono">@ADMIN_PORTAL_2024</p>
+</div>
+<nav class="flex-1 px-4 space-y-1 overflow-y-auto">
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">dashboard</span>
+<span class="text-sm">Dashboard Overview</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">edit_note</span>
+<span class="text-sm">Edit Main Page Website</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">inventory_2</span>
+<span class="text-sm">Products &amp; Pricing</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full bg-secondary-container text-on-secondary-container font-label-md transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">category</span>
+<span class="text-sm font-semibold">Categories Taxonomy</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">local_shipping</span>
+<span class="text-sm">Orders &amp; Logistics</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">confirmation_number</span>
+<span class="text-sm">Coupons &amp; Discounts</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">view_carousel</span>
+<span class="text-sm">Banners &amp; Carousels</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+<span class="text-sm">Reviews Moderation</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">group</span>
+<span class="text-sm">Customer Accounts</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">payments</span>
+<span class="text-sm">Payment Gateways</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shipping</span>
+<span class="text-sm">Shipping &amp; Taxes</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+<span class="text-sm">SEO &amp; Meta Settings</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">storefront</span>
+<span class="text-sm">Branding &amp; Store Info</span>
+</a>
+</nav>
+<div class="p-4 mt-8 border-t border-outline-variant/30 space-y-2">
+<a class="flex items-center justify-center gap-2 w-full py-2.5 rounded-full border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all font-label-md" href="#">
+<span class="material-symbols-outlined text-sm">visibility</span>
+                    View Live Customer Site
+                </a>
+<button class="flex items-center gap-2 w-full px-4 py-2.5 text-error hover:bg-error-container/50 rounded-full transition-all font-label-md">
+<span class="material-symbols-outlined">logout</span>
+                    Log Out Admin
+                </button>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 md:ml-72 flex flex-col min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-inverse-surface w-full top-0 sticky bg-glass-tint/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm z-30 flex justify-between items-center px-margin-desktop w-full max-w-container-max mx-auto h-16 md:px-gutter-desktop">
+<div class="flex items-center gap-4 md:hidden">
+<button class="text-secondary dark:text-secondary-fixed-dim cursor-pointer active:opacity-80 transition-all p-2 rounded-full hover:bg-surface-container-high dark:hover:bg-on-surface-variant/10 transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Quality Glass Emporium</h1>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<h2 class="font-headline-md text-headline-md text-primary font-bold">Categories Taxonomy</h2>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-secondary dark:text-secondary-fixed-dim cursor-pointer active:opacity-80 transition-all p-2 rounded-full hover:bg-surface-container-high dark:hover:bg-on-surface-variant/10 transition-colors">
+<span class="material-symbols-outlined">dark_mode</span>
+</button>
+</div>
+</header>
+<!-- Page Content -->
+<div class="flex-1 p-margin-mobile md:p-margin-desktop max-w-container-max mx-auto w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Taxonomy Tree (Left Column - 8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<div class="flex justify-between items-end mb-2">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Manage Categories</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Organize your product hierarchy and catalog structure.</p>
+</div>
+<div class="flex gap-2">
+<button class="px-4 py-2 border border-outline-variant rounded-full font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">expand_all</span> Expand All
+                            </button>
+<button class="px-4 py-2 border border-outline-variant rounded-full font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">collapse_all</span> Collapse
+                            </button>
+</div>
+</div>
+<!-- Category Tree Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/30 p-6 glass-effect">
+<!-- Root Level -->
+<ul class="space-y-4">
+<!-- Node 1: Frames -->
+<li class="relative">
+<div class="flex items-center justify-between p-3 bg-surface rounded-lg border border-outline-variant/50 hover:border-secondary/50 transition-colors group">
+<div class="flex items-center gap-3">
+<button class="text-on-surface-variant hover:text-secondary transition-colors p-1 rounded-full hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-[20px]">keyboard_arrow_down</span>
+</button>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">crop_square</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Frames</span>
+<span class="bg-surface-container-high text-on-surface-variant font-caption text-caption px-2 py-0.5 rounded-full ml-2">124 Items</span>
+</div>
+<div class="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-subtle-gray hover:text-secondary p-1" title="Edit"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="text-subtle-gray hover:text-error p-1" title="Delete"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+<button class="text-subtle-gray hover:text-secondary p-1" title="Add Subcategory"><span class="material-symbols-outlined text-[18px]">add</span></button>
+</div>
+</div>
+<!-- Subcategories for Frames -->
+<ul class="mt-2 ml-8 pl-4 border-l-2 border-surface-variant space-y-2">
+<!-- Wood Frames -->
+<li>
+<div class="flex items-center justify-between p-2.5 bg-surface/50 rounded-lg hover:bg-surface transition-colors group">
+<div class="flex items-center gap-3">
+<button class="text-on-surface-variant hover:text-secondary transition-colors p-1 rounded-full hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-[20px]">keyboard_arrow_right</span>
+</button>
+<span class="material-symbols-outlined text-tertiary-container" style="font-variation-settings: 'FILL' 1;">forest</span>
+<span class="font-label-md text-label-md text-on-surface">Wood Frames</span>
+<span class="bg-surface-container-high text-on-surface-variant font-caption text-caption px-2 py-0.5 rounded-full ml-2">82 Items</span>
+</div>
+<div class="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-subtle-gray hover:text-secondary p-1" title="Edit"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="text-subtle-gray hover:text-error p-1" title="Delete"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+<button class="text-subtle-gray hover:text-secondary p-1" title="Add Subcategory"><span class="material-symbols-outlined text-[18px]">add</span></button>
+</div>
+</div>
+</li>
+<!-- Metal Frames -->
+<li>
+<div class="flex items-center justify-between p-2.5 bg-surface/50 rounded-lg hover:bg-surface transition-colors group">
+<div class="flex items-center gap-3">
+<button class="text-outline-variant p-1 rounded-full cursor-default">
+<span class="material-symbols-outlined text-[20px]">horizontal_rule</span>
+</button>
+<span class="material-symbols-outlined text-on-surface-variant" style="font-variation-settings: 'FILL' 1;">hardware</span>
+<span class="font-label-md text-label-md text-on-surface">Metal Frames</span>
+<span class="bg-surface-container-high text-on-surface-variant font-caption text-caption px-2 py-0.5 rounded-full ml-2">42 Items</span>
+</div>
+<div class="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-subtle-gray hover:text-secondary p-1" title="Edit"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="text-subtle-gray hover:text-error p-1" title="Delete"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+<button class="text-subtle-gray hover:text-secondary p-1" title="Add Subcategory"><span class="material-symbols-outlined text-[18px]">add</span></button>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<!-- Node 2: Custom Glass -->
+<li class="relative">
+<div class="flex items-center justify-between p-3 bg-surface rounded-lg border border-outline-variant/50 hover:border-secondary/50 transition-colors group">
+<div class="flex items-center gap-3">
+<button class="text-on-surface-variant hover:text-secondary transition-colors p-1 rounded-full hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-[20px]">keyboard_arrow_right</span>
+</button>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">layers</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Custom Glass</span>
+<span class="bg-surface-container-high text-on-surface-variant font-caption text-caption px-2 py-0.5 rounded-full ml-2">18 Items</span>
+</div>
+<div class="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-subtle-gray hover:text-secondary p-1" title="Edit"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="text-subtle-gray hover:text-error p-1" title="Delete"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+<button class="text-subtle-gray hover:text-secondary p-1" title="Add Subcategory"><span class="material-symbols-outlined text-[18px]">add</span></button>
+</div>
+</div>
+</li>
+<!-- Node 3: Mat Boards -->
+<li class="relative">
+<div class="flex items-center justify-between p-3 bg-surface rounded-lg border border-outline-variant/50 hover:border-secondary/50 transition-colors group">
+<div class="flex items-center gap-3">
+<button class="text-on-surface-variant hover:text-secondary transition-colors p-1 rounded-full hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-[20px]">keyboard_arrow_right</span>
+</button>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">branding_watermark</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Mat Boards</span>
+<span class="bg-surface-container-high text-on-surface-variant font-caption text-caption px-2 py-0.5 rounded-full ml-2">56 Items</span>
+</div>
+<div class="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-subtle-gray hover:text-secondary p-1" title="Edit"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="text-subtle-gray hover:text-error p-1" title="Delete"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+<button class="text-subtle-gray hover:text-secondary p-1" title="Add Subcategory"><span class="material-symbols-outlined text-[18px]">add</span></button>
+</div>
+</div>
+</li>
+</ul>
+<!-- Ghost Add Button -->
+<button class="w-full mt-4 p-3 border-2 border-dashed border-outline-variant/50 rounded-lg flex items-center justify-center gap-2 text-on-surface-variant hover:text-secondary hover:border-secondary/50 transition-colors hover:bg-surface-container-lowest">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="font-label-md text-label-md">Add Root Category</span>
+</button>
+</div>
+</div>
+<!-- Add/Edit Form (Right Column - 4 cols) -->
+<div class="lg:col-span-4 flex flex-col">
+<div class="sticky top-24 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/30 p-6 glass-effect flex flex-col h-[calc(100vh-120px)] overflow-y-auto custom-scrollbar">
+<div class="mb-6 border-b border-outline-variant/30 pb-4">
+<h3 class="font-headline-md text-headline-md text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px]">category</span> Add New Category
+                            </h3>
+</div>
+<form class="space-y-5 flex-1 flex flex-col">
+<!-- Category Name -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="cat-name">Category Name <span class="text-error">*</span></label>
+<input class="w-full border border-subtle-gray rounded-[4px] px-3 py-2 font-body-md text-body-md text-on-surface focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-colors" id="cat-name" placeholder="e.g. Acrylic Sheets" type="text"/>
+</div>
+<!-- Parent Category -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="parent-cat">Parent Category</label>
+<select class="w-full border border-subtle-gray rounded-[4px] px-3 py-2 font-body-md text-body-md text-on-surface bg-surface focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-colors appearance-none" id="parent-cat">
+<option value="none">-- None (Root Level) --</option>
+<option value="frames">Frames</option>
+<option value="wood-frames">   Wood Frames</option>
+<option value="metal-frames">   Metal Frames</option>
+<option value="glass">Custom Glass</option>
+<option value="mats">Mat Boards</option>
+</select>
+</div>
+<!-- Slug -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="cat-slug">URL Slug</label>
+<div class="flex items-center">
+<span class="bg-surface-container-high border border-r-0 border-subtle-gray rounded-l-[4px] px-3 py-2 text-on-surface-variant font-body-md text-body-md select-none">/category/</span>
+<input class="flex-1 border border-subtle-gray rounded-r-[4px] px-3 py-2 font-body-md text-body-md text-on-surface focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-colors" id="cat-slug" placeholder="acrylic-sheets" type="text"/>
+</div>
+</div>
+<!-- Description -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="cat-desc">Description</label>
+<textarea class="w-full border border-subtle-gray rounded-[4px] px-3 py-2 font-body-md text-body-md text-on-surface focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-colors resize-none" id="cat-desc" placeholder="Brief description for SEO and catalog display..." rows="3"></textarea>
+</div>
+<!-- Icon/Image Upload -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Category Image</label>
+<div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-outline-variant border-dashed rounded-lg hover:border-secondary/50 transition-colors bg-surface/50 cursor-pointer">
+<div class="space-y-1 text-center">
+<span class="material-symbols-outlined text-[48px] text-outline-variant">image</span>
+<div class="flex text-sm text-on-surface-variant justify-center">
+<span class="relative font-label-md text-label-md text-secondary hover:underline focus-within:outline-none">
+<span>Upload a file</span>
+<input class="sr-only" id="file-upload" name="file-upload" type="file"/>
+</span>
+<p class="pl-1">or drag and drop</p>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">PNG, JPG up to 2MB</p>
+</div>
+</div>
+</div>
+<!-- Visibility Toggle -->
+<div class="flex items-center gap-3 py-2">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+<span class="font-label-md text-label-md text-on-surface">Active on Storefront</span>
+</div>
+<!-- Actions -->
+<div class="mt-auto pt-6 flex gap-3">
+<button class="flex-1 py-2 px-4 border border-primary text-primary rounded-full font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+                                    Cancel
+                                </button>
+<button class="flex-1 py-2 px-4 bg-secondary text-on-secondary rounded-full font-label-md text-label-md hover:brightness-110 shadow-sm transition-all" type="submit">
+                                    Save Category
+                                </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="bg-surface/90 dark:bg-charcoal-bg/90 text-secondary dark:text-secondary-fixed font-caption text-caption hidden md:hidden fixed bottom-0 w-full z-50 rounded-t-full backdrop-blur-xl border-t border-outline-variant/30 dark:border-outline/20 shadow-[0_-4px_10px_rgba(0,0,0,0.05)] flex justify-around items-center px-4 pb-4 pt-2">
+<!-- Assuming this is hidden as per layout instructions for admin pages, but included for completeness of JSON structure -->
+</nav>
+</body></html>

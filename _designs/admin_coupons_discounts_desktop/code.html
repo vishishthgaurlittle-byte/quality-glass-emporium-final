@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Quality Glass Emporium - Coupons</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-secondary": "#ffffff",
+                "success-green": "#117B01",
+                "on-primary-fixed": "#001d36",
+                "surface-bright": "#fcf9f8",
+                "primary-fixed": "#d1e4ff",
+                "tertiary-fixed": "#ffdea5",
+                "error": "#ba1a1a",
+                "on-tertiary-fixed": "#261900",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed-dim": "#a8c9f3",
+                "on-surface": "#1c1b1b",
+                "tertiary-fixed-dim": "#e9c176",
+                "on-secondary-fixed-variant": "#004786",
+                "on-tertiary-fixed-variant": "#5d4201",
+                "surface-container-low": "#f6f3f2",
+                "on-tertiary-container": "#ae8b46",
+                "on-secondary-container": "#00315f",
+                "charcoal-bg": "#1A1C1E",
+                "surface-container-highest": "#e5e2e1",
+                "inverse-on-surface": "#f3f0ef",
+                "outline": "#73777f",
+                "surface-variant": "#e5e2e1",
+                "primary-container": "#002b4d",
+                "on-surface-variant": "#43474e",
+                "subtle-gray": "#777777",
+                "secondary-fixed": "#d4e3ff",
+                "surface-tint": "#406185",
+                "outline-variant": "#c3c6cf",
+                "on-primary": "#ffffff",
+                "surface-container-high": "#ebe7e7",
+                "inverse-primary": "#a8c9f3",
+                "on-primary-container": "#7393bb",
+                "on-error-container": "#93000a",
+                "surface": "#fcf9f8",
+                "surface-container": "#f0edec",
+                "on-secondary-fixed": "#001c3a",
+                "primary": "#00162c",
+                "tertiary": "#1e1300",
+                "on-background": "#1c1b1b",
+                "inverse-surface": "#313030",
+                "on-primary-fixed-variant": "#27496c",
+                "secondary-fixed-dim": "#a5c8ff",
+                "glass-tint": "#F4F7F9",
+                "secondary": "#005faf",
+                "error-container": "#ffdad6",
+                "on-error": "#ffffff",
+                "secondary-container": "#479afd",
+                "background": "#fcf9f8",
+                "on-tertiary": "#ffffff",
+                "surface-dim": "#dcd9d9",
+                "tertiary-container": "#382600"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "gutter-mobile": "16px",
+                "margin-desktop": "64px",
+                "margin-mobile": "20px",
+                "unit": "8px",
+                "gutter-desktop": "32px",
+                "container-max": "1280px"
+        },
+        "fontFamily": {
+                "headline-lg-mobile": [
+                        "Manrope"
+                ],
+                "headline-md": [
+                        "Manrope"
+                ],
+                "body-md": [
+                        "Manrope"
+                ],
+                "label-md": [
+                        "Manrope"
+                ],
+                "body-lg": [
+                        "Manrope"
+                ],
+                "caption": [
+                        "Manrope"
+                ],
+                "headline-lg": [
+                        "Manrope"
+                ],
+                "display-lg": [
+                        "Manrope"
+                ]
+        },
+        "fontSize": {
+                "headline-lg-mobile": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.01em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "caption": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex">
+<!-- Sidebar Navigation Drawer -->
+<aside class="w-72 bg-surface-container-low shadow-md flex flex-col shrink-0 h-screen overflow-y-auto fixed left-0 top-0 z-40 hidden md:flex border-r border-outline-variant/20">
+<div class="p-6">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-[10px] font-bold tracking-widest uppercase bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">Secure Control Panel</span>
+<span class="text-[10px] font-bold tracking-widest uppercase bg-success-green/10 text-success-green px-2 py-0.5 rounded border border-success-green/20">Developer</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-primary mt-4 mb-2">Quality Glass Emporium</h1>
+<p class="text-xs text-on-surface-variant font-mono">@ADMIN_PORTAL_2024</p>
+</div>
+<nav class="flex-1 px-4 space-y-1 overflow-y-auto">
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">dashboard</span>
+<span class="text-sm">Dashboard Overview</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">edit_note</span>
+<span class="text-sm">Edit Main Page Website</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">inventory_2</span>
+<span class="text-sm">Products &amp; Pricing</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">category</span>
+<span class="text-sm">Categories Taxonomy</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">local_shipping</span>
+<span class="text-sm">Orders &amp; Logistics</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full bg-secondary-container text-on-secondary-container font-label-md transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">confirmation_number</span>
+<span class="text-sm font-semibold">Coupons &amp; Discounts</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">view_carousel</span>
+<span class="text-sm">Banners &amp; Carousels</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+<span class="text-sm">Reviews Moderation</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">group</span>
+<span class="text-sm">Customer Accounts</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">payments</span>
+<span class="text-sm">Payment Gateways</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shipping</span>
+<span class="text-sm">Shipping &amp; Taxes</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+<span class="text-sm">SEO &amp; Meta Settings</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">storefront</span>
+<span class="text-sm">Branding &amp; Store Info</span>
+</a>
+</nav>
+<div class="p-4 mt-8 border-t border-outline-variant/30 space-y-2">
+<a class="flex items-center justify-center gap-2 w-full py-2.5 rounded-full border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all font-label-md" href="#">
+<span class="material-symbols-outlined text-sm">visibility</span>
+                    View Live Customer Site
+                </a>
+<button class="flex items-center gap-2 w-full px-4 py-2.5 text-error hover:bg-error-container/50 rounded-full transition-all font-label-md">
+<span class="material-symbols-outlined">logout</span>
+                    Log Out Admin
+                </button>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 md:ml-72 flex flex-col min-h-screen pb-24 md:pb-0">
+<!-- Top App Bar -->
+<header class="bg-surface dark:bg-inverse-surface w-full top-0 sticky bg-glass-tint/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm z-30 flex justify-between items-center px-margin-desktop w-full max-w-container-max mx-auto py-4 md:py-6">
+<div class="flex items-center gap-4">
+<button class="md:hidden text-secondary dark:text-secondary-fixed-dim cursor-pointer active:opacity-80 transition-all">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Quality Glass Emporium</h1>
+</div>
+<button class="text-secondary dark:text-secondary-fixed-dim cursor-pointer active:opacity-80 transition-all p-2 rounded-full hover:bg-surface-container-high dark:hover:bg-on-surface-variant/10">
+<span class="material-symbols-outlined text-[24px]">dark_mode</span>
+</button>
+</header>
+<!-- Content Canvas -->
+<div class="flex-1 p-margin-mobile md:p-gutter-desktop max-w-container-max mx-auto w-full">
+<!-- Page Header -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2">Coupons &amp; Discounts</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Manage promotional codes, configure discounts, and track campaign usage.</p>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-3 rounded-full font-label-md text-label-md font-semibold flex items-center gap-2 hover:bg-on-secondary-fixed-variant transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[20px]">add</span>
+                    Create Coupon
+                </button>
+</div>
+<!-- Dashboard Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Create/Edit Coupon Form (Sidebar/Bento Item) -->
+<div class="lg:col-span-4 space-y-6">
+<div class="bg-surface-container-low rounded-xl p-6 border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-glass-tint/40 to-transparent pointer-events-none"></div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-6 relative z-10 border-b border-outline-variant/20 pb-4">New Promo Code</h3>
+<form class="space-y-5 relative z-10">
+<!-- Code Input -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Coupon Code</label>
+<div class="flex">
+<input class="w-full bg-surface border border-outline-variant/50 rounded-l-md px-4 py-2 font-body-md text-body-md text-on-surface focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary uppercase" placeholder="e.g. SUMMER10" type="text" value="SPRING2024"/>
+<button class="bg-surface-container-high border border-l-0 border-outline-variant/50 rounded-r-md px-3 text-on-surface-variant hover:bg-surface-variant transition-colors" title="Generate Random Code" type="button">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Discount Type & Value -->
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Type</label>
+<select class="w-full bg-surface border border-outline-variant/50 rounded-md px-4 py-2 font-body-md text-body-md text-on-surface focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary appearance-none">
+<option value="percentage">Percentage (%)</option>
+<option value="fixed">Fixed Amount ($)</option>
+<option value="shipping">Free Shipping</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Value</label>
+<input class="w-full bg-surface border border-outline-variant/50 rounded-md px-4 py-2 font-body-md text-body-md text-on-surface focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary" placeholder="0" type="number" value="15"/>
+</div>
+</div>
+<!-- Limits -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Usage Limits</label>
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<input checked="" class="rounded border-outline-variant text-secondary focus:ring-secondary w-4 h-4" id="limit_total" type="checkbox"/>
+<label class="font-body-md text-body-md text-on-surface" for="limit_total">Total uses</label>
+<input class="w-20 ml-auto bg-surface border border-outline-variant/50 rounded-md px-2 py-1 text-sm text-center" type="number" value="100"/>
+</div>
+<div class="flex items-center gap-3">
+<input checked="" class="rounded border-outline-variant text-secondary focus:ring-secondary w-4 h-4" id="limit_user" type="checkbox"/>
+<label class="font-body-md text-body-md text-on-surface" for="limit_user">Limit per user</label>
+<input class="w-20 ml-auto bg-surface border border-outline-variant/50 rounded-md px-2 py-1 text-sm text-center" type="number" value="1"/>
+</div>
+</div>
+</div>
+<!-- Expiry -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Validity</label>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block font-caption text-caption text-on-surface-variant mb-1">Start Date</label>
+<input class="w-full bg-surface border border-outline-variant/50 rounded-md px-3 py-2 text-sm text-on-surface focus:outline-none focus:border-secondary" type="date"/>
+</div>
+<div>
+<label class="block font-caption text-caption text-on-surface-variant mb-1">End Date</label>
+<input class="w-full bg-surface border border-outline-variant/50 rounded-md px-3 py-2 text-sm text-on-surface focus:outline-none focus:border-secondary" type="date"/>
+</div>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-3 rounded-full font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors mt-4" type="submit">
+                                Save Coupon
+                            </button>
+</form>
+</div>
+</div>
+<!-- Active/Historical Coupons List (Main Canvas) -->
+<div class="lg:col-span-8 space-y-6">
+<!-- Stats Overview -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-outline-variant/20 shadow-[0_2px_8px_rgba(0,0,0,0.02)] flex items-start justify-between">
+<div>
+<p class="font-caption text-caption text-on-surface-variant mb-1">Active Codes</p>
+<h4 class="font-headline-lg text-headline-lg text-on-surface">12</h4>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-fixed/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">sell</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-outline-variant/20 shadow-[0_2px_8px_rgba(0,0,0,0.02)] flex items-start justify-between">
+<div>
+<p class="font-caption text-caption text-on-surface-variant mb-1">Total Discount Given</p>
+<h4 class="font-headline-lg text-headline-lg text-on-surface">$4,250</h4>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/30 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">payments</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-outline-variant/20 shadow-[0_2px_8px_rgba(0,0,0,0.02)] flex items-start justify-between">
+<div>
+<p class="font-caption text-caption text-on-surface-variant mb-1">Usage This Month</p>
+<h4 class="font-headline-lg text-headline-lg text-on-surface">342</h4>
+</div>
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed/30 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+</div>
+</div>
+<!-- Filter & Search -->
+<div class="flex flex-col sm:flex-row justify-between items-center gap-4 bg-surface p-2 rounded-lg border border-outline-variant/20">
+<div class="relative w-full sm:w-64">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container-low border-none rounded-md pl-10 pr-4 py-2 font-body-md text-body-md text-on-surface focus:ring-0" placeholder="Search codes..." type="text"/>
+</div>
+<div class="flex gap-2 w-full sm:w-auto overflow-x-auto pb-2 sm:pb-0 hide-scrollbar">
+<button class="px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md whitespace-nowrap">All</button>
+<button class="px-4 py-1.5 rounded-full border border-outline-variant text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md whitespace-nowrap">Active</button>
+<button class="px-4 py-1.5 rounded-full border border-outline-variant text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md whitespace-nowrap">Expired</button>
+</div>
+</div>
+<!-- Data Table -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/20 shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-outline-variant/20">
+<th class="py-4 px-6 font-label-md text-label-md text-on-surface-variant font-semibold">Code</th>
+<th class="py-4 px-6 font-label-md text-label-md text-on-surface-variant font-semibold">Discount</th>
+<th class="py-4 px-6 font-label-md text-label-md text-on-surface-variant font-semibold">Usage</th>
+<th class="py-4 px-6 font-label-md text-label-md text-on-surface-variant font-semibold">Status</th>
+<th class="py-4 px-6 font-label-md text-label-md text-on-surface-variant font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-4 px-6">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-[16px] font-bold text-on-surface uppercase tracking-wide">SPRING24</span>
+<button class="text-on-surface-variant hover:text-secondary"><span class="material-symbols-outlined text-[16px]">content_copy</span></button>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-1">Exp: May 31, 2024</p>
+</td>
+<td class="py-4 px-6">
+<span class="font-body-md text-body-md text-on-surface font-medium">15% Off</span>
+<p class="font-caption text-caption text-on-surface-variant">All items</p>
+</td>
+<td class="py-4 px-6">
+<div class="flex items-center gap-2">
+<div class="w-full bg-surface-variant rounded-full h-1.5 max-w-[80px]">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 45%"></div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">45/100</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-green-100 text-success-green font-caption text-caption font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-success-green"></span>
+                                                Active
+                                            </span>
+</td>
+<td class="py-4 px-6 text-right">
+<button class="text-on-surface-variant hover:text-primary transition-colors p-1"><span class="material-symbols-outlined">edit</span></button>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1 ml-1"><span class="material-symbols-outlined">delete</span></button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-4 px-6">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-[16px] font-bold text-on-surface uppercase tracking-wide">WELCOME10</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-1">No Expiry</p>
+</td>
+<td class="py-4 px-6">
+<span class="font-body-md text-body-md text-on-surface font-medium">$10 Off</span>
+<p class="font-caption text-caption text-on-surface-variant">Min. $50 order</p>
+</td>
+<td class="py-4 px-6">
+<span class="font-body-md text-body-md text-on-surface">892</span>
+<p class="font-caption text-caption text-on-surface-variant">Unlimited</p>
+</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-green-100 text-success-green font-caption text-caption font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-success-green"></span>
+                                                Active
+                                            </span>
+</td>
+<td class="py-4 px-6 text-right">
+<button class="text-on-surface-variant hover:text-primary transition-colors p-1"><span class="material-symbols-outlined">edit</span></button>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1 ml-1"><span class="material-symbols-outlined">delete</span></button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors opacity-60">
+<td class="py-4 px-6">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-[16px] font-bold text-on-surface uppercase tracking-wide line-through">WINTERFLASH</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-1">Exp: Feb 15, 2024</p>
+</td>
+<td class="py-4 px-6">
+<span class="font-body-md text-body-md text-on-surface font-medium">30% Off</span>
+<p class="font-caption text-caption text-on-surface-variant">Clearance only</p>
+</td>
+<td class="py-4 px-6">
+<div class="flex items-center gap-2">
+<div class="w-full bg-surface-variant rounded-full h-1.5 max-w-[80px]">
+<div class="bg-outline h-1.5 rounded-full" style="width: 100%"></div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">50/50</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-variant text-on-surface-variant font-caption text-caption font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                                                Expired
+                                            </span>
+</td>
+<td class="py-4 px-6 text-right">
+<button class="text-on-surface-variant hover:text-primary transition-colors p-1"><span class="material-symbols-outlined">visibility</span></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Nav Bar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 rounded-t-full bg-surface/90 dark:bg-charcoal-bg/90 backdrop-blur-xl border-t border-outline-variant/30 dark:border-outline/20 shadow-[0_-4px_10px_rgba(0,0,0,0.05)] md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-4 pt-2">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-caption text-caption mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="font-caption text-caption mt-1">Collections</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="font-caption text-caption mt-1">Cart</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-caption text-caption mt-1">Profile</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-full px-5 py-1.5 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">admin_panel_settings</span>
+<span class="font-caption text-caption mt-1">Admin</span>
+</a>
+</nav>
+<style>
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>

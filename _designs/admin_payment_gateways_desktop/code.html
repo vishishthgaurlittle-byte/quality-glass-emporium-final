@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payment Gateways - Store Admin</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-secondary": "#ffffff",
+                "success-green": "#117B01",
+                "on-primary-fixed": "#001d36",
+                "surface-bright": "#fcf9f8",
+                "primary-fixed": "#d1e4ff",
+                "tertiary-fixed": "#ffdea5",
+                "error": "#ba1a1a",
+                "on-tertiary-fixed": "#261900",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed-dim": "#a8c9f3",
+                "on-surface": "#1c1b1b",
+                "tertiary-fixed-dim": "#e9c176",
+                "on-secondary-fixed-variant": "#004786",
+                "on-tertiary-fixed-variant": "#5d4201",
+                "surface-container-low": "#f6f3f2",
+                "on-tertiary-container": "#ae8b46",
+                "on-secondary-container": "#00315f",
+                "charcoal-bg": "#1A1C1E",
+                "surface-container-highest": "#e5e2e1",
+                "inverse-on-surface": "#f3f0ef",
+                "outline": "#73777f",
+                "surface-variant": "#e5e2e1",
+                "primary-container": "#002b4d",
+                "on-surface-variant": "#43474e",
+                "subtle-gray": "#777777",
+                "secondary-fixed": "#d4e3ff",
+                "surface-tint": "#406185",
+                "outline-variant": "#c3c6cf",
+                "on-primary": "#ffffff",
+                "surface-container-high": "#ebe7e7",
+                "inverse-primary": "#a8c9f3",
+                "on-primary-container": "#7393bb",
+                "on-error-container": "#93000a",
+                "surface": "#fcf9f8",
+                "surface-container": "#f0edec",
+                "on-secondary-fixed": "#001c3a",
+                "primary": "#00162c",
+                "tertiary": "#1e1300",
+                "on-background": "#1c1b1b",
+                "inverse-surface": "#313030",
+                "on-primary-fixed-variant": "#27496c",
+                "secondary-fixed-dim": "#a5c8ff",
+                "glass-tint": "#F4F7F9",
+                "secondary": "#005faf",
+                "error-container": "#ffdad6",
+                "on-error": "#ffffff",
+                "secondary-container": "#479afd",
+                "background": "#fcf9f8",
+                "on-tertiary": "#ffffff",
+                "surface-dim": "#dcd9d9",
+                "tertiary-container": "#382600"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "gutter-mobile": "16px",
+                "margin-desktop": "64px",
+                "margin-mobile": "20px",
+                "unit": "8px",
+                "gutter-desktop": "32px",
+                "container-max": "1280px"
+        },
+        "fontFamily": {
+                "headline-lg-mobile": [
+                        "Manrope"
+                ],
+                "headline-md": [
+                        "Manrope"
+                ],
+                "body-md": [
+                        "Manrope"
+                ],
+                "label-md": [
+                        "Manrope"
+                ],
+                "body-lg": [
+                        "Manrope"
+                ],
+                "caption": [
+                        "Manrope"
+                ],
+                "headline-lg": [
+                        "Manrope"
+                ],
+                "display-lg": [
+                        "Manrope"
+                ]
+        },
+        "fontSize": {
+                "headline-lg-mobile": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.01em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "caption": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex">
+<!-- NavigationDrawer -->
+<aside class="w-72 bg-surface-container-low shadow-md flex flex-col shrink-0 h-screen overflow-y-auto fixed left-0 top-0 z-40 hidden md:flex border-r border-outline-variant/20">
+<div class="p-6">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-[10px] font-bold tracking-widest uppercase bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">Secure Control Panel</span>
+<span class="text-[10px] font-bold tracking-widest uppercase bg-success-green/10 text-success-green px-2 py-0.5 rounded border border-success-green/20">Developer</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-primary mt-4 mb-2">Quality Glass Emporium</h1>
+<p class="text-xs text-on-surface-variant font-mono">@ADMIN_PORTAL_2024</p>
+</div>
+<nav class="flex-1 px-4 space-y-1 overflow-y-auto">
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">dashboard</span>
+<span class="text-sm">Dashboard Overview</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">edit_note</span>
+<span class="text-sm">Edit Main Page Website</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">inventory_2</span>
+<span class="text-sm">Products &amp; Pricing</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">category</span>
+<span class="text-sm">Categories Taxonomy</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">local_shipping</span>
+<span class="text-sm">Orders &amp; Logistics</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">confirmation_number</span>
+<span class="text-sm">Coupons &amp; Discounts</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">view_carousel</span>
+<span class="text-sm">Banners &amp; Carousels</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+<span class="text-sm">Reviews Moderation</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">group</span>
+<span class="text-sm">Customer Accounts</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full bg-secondary-container text-on-secondary-container font-label-md transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">payments</span>
+<span class="text-sm font-semibold">Payment Gateways</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shipping</span>
+<span class="text-sm">Shipping &amp; Taxes</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+<span class="text-sm">SEO &amp; Meta Settings</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">storefront</span>
+<span class="text-sm">Branding &amp; Store Info</span>
+</a>
+</nav>
+<div class="p-4 mt-8 border-t border-outline-variant/30 space-y-2">
+<a class="flex items-center justify-center gap-2 w-full py-2.5 rounded-full border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all font-label-md" href="#">
+<span class="material-symbols-outlined text-sm">visibility</span>
+                    View Live Customer Site
+                </a>
+<button class="flex items-center gap-2 w-full px-4 py-2.5 text-error hover:bg-error-container/50 rounded-full transition-all font-label-md">
+<span class="material-symbols-outlined">logout</span>
+                    Log Out Admin
+                </button>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 ml-0 md:ml-72 min-h-screen bg-surface flex flex-col">
+<!-- TopAppBar (Shared Component) -->
+<header class="bg-surface dark:bg-inverse-surface text-secondary dark:text-secondary-fixed-dim font-headline-md text-headline-md w-full top-0 sticky bg-glass-tint/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm flex justify-between items-center px-margin-desktop w-full max-w-container-max mx-auto h-20 z-30">
+<div class="flex items-center gap-4">
+<button class="md:hidden p-2 text-on-surface-variant cursor-pointer active:opacity-80 transition-all">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Quality Glass Emporium</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8 h-full">
+<a class="h-full flex items-center text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high dark:hover:bg-on-surface-variant/10 px-4 transition-colors" href="#">General</a>
+<a class="h-full flex items-center text-secondary dark:text-secondary-fixed font-bold border-b-2 border-secondary px-4 transition-colors" href="#">Payment Gateways</a>
+<a class="h-full flex items-center text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high dark:hover:bg-on-surface-variant/10 px-4 transition-colors" href="#">Shipping</a>
+</nav>
+<button class="p-2 text-on-surface-variant cursor-pointer active:opacity-80 transition-all hover:bg-surface-container-high rounded-full">
+<span class="material-symbols-outlined" data-icon="dark_mode">dark_mode</span>
+</button>
+</header>
+<!-- Page Canvas -->
+<div class="flex-1 p-margin-mobile md:p-gutter-desktop max-w-container-max mx-auto w-full">
+<!-- Header Section -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Payment Methods</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Configure and manage how your customers can pay during checkout.</p>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-3 rounded-full font-label-md text-label-md hover:brightness-110 shadow-sm transition-all flex items-center gap-2 shrink-0">
+<span class="material-symbols-outlined">save</span>
+                    Save Settings
+                </button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Left Column (Main Configs) -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<!-- UPI Configurations -->
+<section class="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant/30">
+<div class="flex justify-between items-center mb-6">
+<h3 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">qr_code_scanner</span>
+                                UPI Configurations
+                            </h3>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-dim peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+<span class="ms-3 font-label-md text-label-md text-on-surface">Active</span>
+</label>
+</div>
+<div class="space-y-4">
+<!-- UPI Item 1 -->
+<div class="p-4 rounded-lg border border-outline-variant/50 bg-surface-bright flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded-lg border border-outline-variant/20">
+<span class="material-symbols-outlined text-subtle-gray">qr_code</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Primary Store UPI</p>
+<p class="font-body-md text-body-md text-on-surface-variant font-mono">store@upi</p>
+</div>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<button class="px-4 py-2 border border-outline-variant rounded-full text-on-surface font-label-md text-label-md hover:bg-surface-container-low transition-colors w-full sm:w-auto">View QR</button>
+<button class="p-2 text-error hover:bg-error-container rounded-full transition-colors flex-shrink-0">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+<button class="w-full py-4 border-2 border-dashed border-outline-variant rounded-lg text-primary font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined">add_circle</span>
+                                Add New UPI ID
+                            </button>
+</div>
+</section>
+<!-- Bank Transfer Details -->
+<section class="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant/30">
+<div class="flex justify-between items-center mb-6">
+<h3 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">account_balance</span>
+                                Bank Transfer Details
+                            </h3>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-dim peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+<span class="ms-3 font-label-md text-label-md text-on-surface">Inactive</span>
+</label>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Account Name</label>
+<input class="w-full border border-subtle-gray rounded px-3 py-2 font-body-md text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors" type="text" value="Quality Glass Emporium"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Account Number</label>
+<input class="w-full border border-subtle-gray rounded px-3 py-2 font-body-md text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors" type="text" value="**** **** 4567"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Bank Name</label>
+<input class="w-full border border-subtle-gray rounded px-3 py-2 font-body-md text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors" type="text" value="Global Business Bank"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Routing / IFSC Code</label>
+<input class="w-full border border-subtle-gray rounded px-3 py-2 font-body-md text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors" type="text" value="GBB0001234"/>
+</div>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-4 flex items-start gap-1">
+<span class="material-symbols-outlined" style="font-size: 16px;">info</span>
+                            These details will be shown to customers at checkout when 'Bank Transfer' is selected. Orders will remain pending until manually verified.
+                        </p>
+</section>
+</div>
+<!-- Right Column (Standard Gateways) -->
+<div class="lg:col-span-4 flex flex-col gap-8">
+<section class="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant/30 sticky top-24">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">integration_instructions</span>
+                            Standard Gateways
+                        </h3>
+<div class="space-y-4">
+<!-- Stripe Integration -->
+<div class="p-4 rounded-lg border border-outline-variant/50 bg-surface-bright">
+<div class="flex justify-between items-center mb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-indigo-50 rounded flex items-center justify-center font-bold text-indigo-600 text-lg">S</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Stripe</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-9 h-5 bg-surface-dim peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<button class="w-full py-2 border border-outline-variant rounded text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low transition-colors flex justify-center items-center gap-2">
+<span class="material-symbols-outlined" style="font-size: 18px;">settings</span>
+                                    Configure API Keys
+                                </button>
+</div>
+<!-- Razorpay Integration -->
+<div class="p-4 rounded-lg border border-outline-variant/50 bg-surface-bright opacity-60">
+<div class="flex justify-between items-center mb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-blue-50 rounded flex items-center justify-center font-bold text-blue-600 text-lg">R</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Razorpay</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-9 h-5 bg-surface-dim peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<button class="w-full py-2 border border-outline-variant rounded text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low transition-colors flex justify-center items-center gap-2" disabled="">
+<span class="material-symbols-outlined" style="font-size: 18px;">settings</span>
+                                    Configure API Keys
+                                </button>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface text-on-surface-variant dark:text-surface-variant font-caption text-caption w-full py-8 mt-12 border-t border-outline-variant dark:border-outline/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter-desktop px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed block mb-4">Quality Glass Emporium</span>
+<p>© 2024 Quality Glass Emporium. All rights reserved.</p>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary hover:underline transition-all opacity-100 hover:opacity-80" href="#">About Us</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary hover:underline transition-all opacity-100 hover:opacity-80" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary hover:underline transition-all opacity-100 hover:opacity-80" href="#">Shipping Policy</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary hover:underline transition-all opacity-100 hover:opacity-80" href="#">Privacy</a>
+</div>
+</div>
+</footer>
+</main>
+<!-- BottomNavBar (Shared Component - Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-4 pt-2 bg-surface/90 dark:bg-charcoal-bg/90 text-secondary dark:text-secondary-fixed font-caption text-caption w-full z-50 rounded-t-full backdrop-blur-xl border-t border-outline-variant/30 dark:border-outline/20 shadow-[0_-4px_10px_rgba(0,0,0,0.05)]">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span>Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span>Collections</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span>Cart</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span>Profile</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-full px-5 py-1.5 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="admin_panel_settings" style="font-variation-settings: 'FILL' 1;">admin_panel_settings</span>
+<span>Admin</span>
+</a>
+</nav>
+</body></html>

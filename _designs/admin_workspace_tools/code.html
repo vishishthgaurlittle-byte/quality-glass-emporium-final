@@ -1,0 +1,334 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Admin - Coupons &amp; Discounts</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#5d4201",
+                      "inverse-on-surface": "#f3f0ef",
+                      "primary-fixed-dim": "#a8c9f3",
+                      "on-primary-fixed": "#001d36",
+                      "subtle-gray": "#777777",
+                      "secondary-fixed-dim": "#a5c8ff",
+                      "secondary-fixed": "#d4e3ff",
+                      "inverse-surface": "#313030",
+                      "on-surface": "#1c1b1b",
+                      "on-primary": "#ffffff",
+                      "success-green": "#117B01",
+                      "tertiary": "#1e1300",
+                      "on-surface-variant": "#43474e",
+                      "secondary-container": "#479afd",
+                      "tertiary-container": "#382600",
+                      "on-tertiary-container": "#ae8b46",
+                      "error-container": "#ffdad6",
+                      "inverse-primary": "#a8c9f3",
+                      "glass-tint": "#F4F7F9",
+                      "on-secondary-fixed": "#001c3a",
+                      "surface-container": "#f0edec",
+                      "outline": "#73777f",
+                      "surface-container-high": "#ebe7e7",
+                      "error": "#ba1a1a",
+                      "surface-container-lowest": "#ffffff",
+                      "charcoal-bg": "#1A1C1E",
+                      "on-primary-fixed-variant": "#27496c",
+                      "secondary": "#005faf",
+                      "on-error": "#ffffff",
+                      "primary-container": "#002b4d",
+                      "surface-tint": "#406185",
+                      "surface-container-highest": "#e5e2e1",
+                      "primary": "#00162c",
+                      "on-primary-container": "#7393bb",
+                      "on-secondary": "#ffffff",
+                      "surface-dim": "#dcd9d9",
+                      "outline-variant": "#c3c6cf",
+                      "primary-fixed": "#d1e4ff",
+                      "surface-variant": "#e5e2e1",
+                      "background": "#fcf9f8",
+                      "surface": "#fcf9f8",
+                      "on-error-container": "#93000a",
+                      "on-secondary-container": "#00315f",
+                      "tertiary-fixed-dim": "#e9c176",
+                      "tertiary-fixed": "#ffdea5",
+                      "on-background": "#1c1b1b",
+                      "surface-bright": "#fcf9f8",
+                      "surface-container-low": "#f6f3f2",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-fixed": "#261900",
+                      "on-secondary-fixed-variant": "#004786"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "container-max": "1280px",
+                      "gutter-desktop": "32px",
+                      "margin-desktop": "64px",
+                      "unit": "8px",
+                      "gutter-mobile": "16px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Manrope"
+                      ],
+                      "headline-lg": [
+                              "Manrope"
+                      ],
+                      "label-md": [
+                              "Manrope"
+                      ],
+                      "display-lg": [
+                              "Manrope"
+                      ],
+                      "headline-lg-mobile": [
+                              "Manrope"
+                      ],
+                      "body-lg": [
+                              "Manrope"
+                      ],
+                      "body-md": [
+                              "Manrope"
+                      ],
+                      "caption": [
+                              "Manrope"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: theme('colors.background'); color: theme('colors.on-background'); }
+        .glass-effect { background: rgba(244, 247, 249, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(195, 198, 207, 0.3); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="flex bg-background h-screen overflow-hidden">
+<!-- Navigation Drawer -->
+<nav class="bg-surface dark:bg-charcoal-bg text-secondary dark:text-secondary-fixed font-label-md text-label-md h-full w-72 fixed left-0 top-0 bg-surface-container-low dark:bg-inverse-surface border-r border-outline-variant/20 shadow-md transition-all duration-200 ease-in-out flex flex-col h-screen py-4 z-40 hidden md:flex">
+<div class="px-6 mb-8 flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold">SM</div>
+<div>
+<div class="font-headline-md text-[16px] text-primary dark:text-primary-fixed">Store Manager</div>
+<div class="font-caption text-caption text-on-surface-variant">Admin Access • Verified</div>
+</div>
+</div>
+<ul class="flex flex-col gap-1 w-full">
+<li>
+<a class="text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-on-surface-variant/20 rounded-full mx-2 my-1 px-4 py-3 flex items-center gap-3 transition-all duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span> Store Overview
+                </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-on-surface-variant/20 rounded-full mx-2 my-1 px-4 py-3 flex items-center gap-3 transition-all duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="local_shipping">local_shipping</span> Orders &amp; Logistics
+                </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-on-surface-variant/20 rounded-full mx-2 my-1 px-4 py-3 flex items-center gap-3 transition-all duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span> Inventory
+                </a>
+</li>
+<li>
+<a class="bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-full mx-2 my-1 px-4 py-3 flex items-center gap-3 transition-all duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="confirmation_number" data-weight="fill">confirmation_number</span> Coupons
+                </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-on-surface-variant/20 rounded-full mx-2 my-1 px-4 py-3 flex items-center gap-3 transition-all duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="auto_graph">auto_graph</span> SEO &amp; Branding
+                </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-on-surface-variant/20 rounded-full mx-2 my-1 px-4 py-3 flex items-center gap-3 transition-all duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span> Shop View
+                </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-on-surface-variant/20 rounded-full mx-2 my-1 px-4 py-3 flex items-center gap-3 transition-all duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span> Settings
+                </a>
+</li>
+<li class="mt-auto">
+<a class="text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-on-surface-variant/20 rounded-full mx-2 my-1 px-4 py-3 flex items-center gap-3 transition-all duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span> Logout
+                </a>
+</li>
+</ul>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col md:ml-72 overflow-y-auto">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-inverse-surface text-secondary dark:text-secondary-fixed-dim font-headline-md text-headline-md w-full top-0 sticky bg-glass-tint/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm cursor-pointer active:opacity-80 transition-all flex justify-between items-center px-margin-desktop w-full max-w-container-max mx-auto py-4 z-30">
+<div class="flex items-center gap-4">
+<button class="md:hidden p-2 rounded-full hover:bg-surface-container-high dark:hover:bg-on-surface-variant/10 transition-colors">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Quality Glass Emporium</div>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container-high dark:hover:bg-on-surface-variant/10 transition-colors">
+<span class="material-symbols-outlined" data-icon="dark_mode">dark_mode</span>
+</button>
+</header>
+<!-- Dashboard Content -->
+<div class="p-margin-mobile md:p-margin-desktop max-w-container-max mx-auto w-full">
+<div class="mb-8">
+<h1 class="font-display-lg text-display-lg text-primary mb-2">Coupons &amp; Discounts</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Manage active promotions, generate new vouchers, and oversee campaign performance.</p>
+</div>
+<!-- Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-unit-4 md:gap-gutter-desktop">
+<!-- Quick Actions (Spans 4 columns on desktop) -->
+<div class="md:col-span-4 flex flex-col gap-unit-4">
+<button class="glass-effect p-6 rounded-xl flex items-center gap-4 hover:shadow-md transition-shadow group w-full text-left">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
+</div>
+<div>
+<div class="font-headline-md text-[18px] text-primary">Create Voucher</div>
+<div class="font-body-md text-[14px] text-on-surface-variant">Generate unique codes</div>
+</div>
+</button>
+<button class="glass-effect p-6 rounded-xl flex items-center gap-4 hover:shadow-md transition-shadow group w-full text-left">
+<div class="w-12 h-12 rounded-full bg-surface-container-high text-primary flex items-center justify-center group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined" data-icon="settings_applications">settings_applications</span>
+</div>
+<div>
+<div class="font-headline-md text-[18px] text-primary">SEO &amp; Meta Settings</div>
+<div class="font-body-md text-[14px] text-on-surface-variant">Optimize campaign reach</div>
+</div>
+</button>
+<button class="glass-effect p-6 rounded-xl flex items-center gap-4 hover:shadow-md transition-shadow group w-full text-left">
+<div class="w-12 h-12 rounded-full bg-surface-container-high text-primary flex items-center justify-center group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined" data-icon="view_carousel">view_carousel</span>
+</div>
+<div>
+<div class="font-headline-md text-[18px] text-primary">Banners/Carousels</div>
+<div class="font-body-md text-[14px] text-on-surface-variant">Update promo visuals</div>
+</div>
+</button>
+</div>
+<!-- Active Campaigns Table (Spans 8 columns on desktop) -->
+<div class="md:col-span-8 glass-effect rounded-xl overflow-hidden flex flex-col">
+<div class="p-6 border-b border-outline-variant/30 flex justify-between items-center bg-surface">
+<h2 class="font-headline-md text-[20px] text-primary">Active Campaigns</h2>
+<button class="font-label-md text-label-md text-secondary hover:underline">View All</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-lowest border-b border-outline-variant/20 font-label-md text-[12px] text-on-surface-variant uppercase tracking-wider">
+<th class="p-4 font-medium">Code</th>
+<th class="p-4 font-medium">Type</th>
+<th class="p-4 font-medium">Usage</th>
+<th class="p-4 font-medium">Status</th>
+<th class="p-4 font-medium text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-[14px]">
+<tr class="border-b border-outline-variant/10 hover:bg-surface-container-lowest transition-colors">
+<td class="p-4 font-semibold text-primary">SUMMER24</td>
+<td class="p-4 text-on-surface-variant">20% Off Order</td>
+<td class="p-4 text-on-surface-variant">142 / 500</td>
+<td class="p-4"><span class="bg-success-green/10 text-success-green px-2 py-1 rounded-full text-[12px] font-medium">Active</span></td>
+<td class="p-4 text-right">
+<button class="text-subtle-gray hover:text-primary transition-colors"><span class="material-symbols-outlined" data-icon="edit">edit</span></button>
+</td>
+</tr>
+<tr class="border-b border-outline-variant/10 hover:bg-surface-container-lowest transition-colors">
+<td class="p-4 font-semibold text-primary">FREESHIP</td>
+<td class="p-4 text-on-surface-variant">Free Shipping</td>
+<td class="p-4 text-on-surface-variant">89 / Unlimited</td>
+<td class="p-4"><span class="bg-success-green/10 text-success-green px-2 py-1 rounded-full text-[12px] font-medium">Active</span></td>
+<td class="p-4 text-right">
+<button class="text-subtle-gray hover:text-primary transition-colors"><span class="material-symbols-outlined" data-icon="edit">edit</span></button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="p-4 font-semibold text-primary">NEWUSER10</td>
+<td class="p-4 text-on-surface-variant">$10 Off First Order</td>
+<td class="p-4 text-on-surface-variant">34 / 100</td>
+<td class="p-4"><span class="bg-error/10 text-error px-2 py-1 rounded-full text-[12px] font-medium">Expiring</span></td>
+<td class="p-4 text-right">
+<button class="text-subtle-gray hover:text-primary transition-colors"><span class="material-symbols-outlined" data-icon="edit">edit</span></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

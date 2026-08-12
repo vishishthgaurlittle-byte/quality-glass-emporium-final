@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Products &amp; Pricing - Quality Glass Emporium</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-secondary": "#ffffff",
+                "success-green": "#117B01",
+                "on-primary-fixed": "#001d36",
+                "surface-bright": "#fcf9f8",
+                "primary-fixed": "#d1e4ff",
+                "tertiary-fixed": "#ffdea5",
+                "error": "#ba1a1a",
+                "on-tertiary-fixed": "#261900",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed-dim": "#a8c9f3",
+                "on-surface": "#1c1b1b",
+                "tertiary-fixed-dim": "#e9c176",
+                "on-secondary-fixed-variant": "#004786",
+                "on-tertiary-fixed-variant": "#5d4201",
+                "surface-container-low": "#f6f3f2",
+                "on-tertiary-container": "#ae8b46",
+                "on-secondary-container": "#00315f",
+                "charcoal-bg": "#1A1C1E",
+                "surface-container-highest": "#e5e2e1",
+                "inverse-on-surface": "#f3f0ef",
+                "outline": "#73777f",
+                "surface-variant": "#e5e2e1",
+                "primary-container": "#002b4d",
+                "on-surface-variant": "#43474e",
+                "subtle-gray": "#777777",
+                "secondary-fixed": "#d4e3ff",
+                "surface-tint": "#406185",
+                "outline-variant": "#c3c6cf",
+                "on-primary": "#ffffff",
+                "surface-container-high": "#ebe7e7",
+                "inverse-primary": "#a8c9f3",
+                "on-primary-container": "#7393bb",
+                "on-error-container": "#93000a",
+                "surface": "#fcf9f8",
+                "surface-container": "#f0edec",
+                "on-secondary-fixed": "#001c3a",
+                "primary": "#00162c",
+                "tertiary": "#1e1300",
+                "on-background": "#1c1b1b",
+                "inverse-surface": "#313030",
+                "on-primary-fixed-variant": "#27496c",
+                "secondary-fixed-dim": "#a5c8ff",
+                "glass-tint": "#F4F7F9",
+                "secondary": "#005faf",
+                "error-container": "#ffdad6",
+                "on-error": "#ffffff",
+                "secondary-container": "#479afd",
+                "background": "#fcf9f8",
+                "on-tertiary": "#ffffff",
+                "surface-dim": "#dcd9d9",
+                "tertiary-container": "#382600"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "gutter-mobile": "16px",
+                "margin-desktop": "64px",
+                "margin-mobile": "20px",
+                "unit": "8px",
+                "gutter-desktop": "32px",
+                "container-max": "1280px"
+        },
+        "fontFamily": {
+                "headline-lg-mobile": [
+                        "Manrope"
+                ],
+                "headline-md": [
+                        "Manrope"
+                ],
+                "body-md": [
+                        "Manrope"
+                ],
+                "label-md": [
+                        "Manrope"
+                ],
+                "body-lg": [
+                        "Manrope"
+                ],
+                "caption": [
+                        "Manrope"
+                ],
+                "headline-lg": [
+                        "Manrope"
+                ],
+                "display-lg": [
+                        "Manrope"
+                ]
+        },
+        "fontSize": {
+                "headline-lg-mobile": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.01em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "caption": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        body { background-color: theme('colors.background'); color: theme('colors.on-background'); font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="flex bg-background text-on-background h-screen overflow-hidden">
+<!-- NavigationDrawer -->
+<aside class="w-72 bg-surface-container-low shadow-md flex flex-col shrink-0 h-screen overflow-y-auto fixed left-0 top-0 z-40 hidden md:flex border-r border-outline-variant/20">
+<div class="p-6">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-[10px] font-bold tracking-widest uppercase bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">Secure Control Panel</span>
+<span class="text-[10px] font-bold tracking-widest uppercase bg-success-green/10 text-success-green px-2 py-0.5 rounded border border-success-green/20">Developer</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-primary mt-4 mb-2">Quality Glass Emporium</h1>
+<p class="text-xs text-on-surface-variant font-mono">@ADMIN_PORTAL_2024</p>
+</div>
+<nav class="flex-1 px-4 space-y-1 overflow-y-auto">
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">dashboard</span>
+<span class="text-sm">Dashboard Overview</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">edit_note</span>
+<span class="text-sm">Edit Main Page Website</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full bg-secondary-container text-on-secondary-container font-label-md transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<span class="text-sm font-semibold">Products &amp; Pricing</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">category</span>
+<span class="text-sm">Categories Taxonomy</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">local_shipping</span>
+<span class="text-sm">Orders &amp; Logistics</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">confirmation_number</span>
+<span class="text-sm">Coupons &amp; Discounts</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">view_carousel</span>
+<span class="text-sm">Banners &amp; Carousels</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+<span class="text-sm">Reviews Moderation</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">group</span>
+<span class="text-sm">Customer Accounts</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">payments</span>
+<span class="text-sm">Payment Gateways</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shipping</span>
+<span class="text-sm">Shipping &amp; Taxes</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+<span class="text-sm">SEO &amp; Meta Settings</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">storefront</span>
+<span class="text-sm">Branding &amp; Store Info</span>
+</a>
+</nav>
+<div class="p-4 mt-8 border-t border-outline-variant/30 space-y-2">
+<a class="flex items-center justify-center gap-2 w-full py-2.5 rounded-full border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all font-label-md" href="#">
+<span class="material-symbols-outlined text-sm">visibility</span>
+                    View Live Customer Site
+                </a>
+<button class="flex items-center gap-2 w-full px-4 py-2.5 text-error hover:bg-error-container/50 rounded-full transition-all font-label-md">
+<span class="material-symbols-outlined">logout</span>
+                    Log Out Admin
+                </button>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col md:ml-72 h-screen overflow-hidden bg-background">
+<!-- TopAppBar (Mobile Only) -->
+<header class="bg-surface dark:bg-inverse-surface w-full top-0 sticky bg-glass-tint/80 backdrop-blur-md shadow-sm flex justify-between items-center px-4 py-3 z-40 md:hidden border-b border-outline-variant/30">
+<button class="text-on-surface-variant p-2 active:opacity-80 transition-all">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Quality Glass Emporium</span>
+<button class="text-on-surface-variant p-2 active:opacity-80 transition-all">
+<span class="material-symbols-outlined" data-icon="dark_mode">dark_mode</span>
+</button>
+</header>
+<!-- Main Canvas -->
+<main class="flex-1 overflow-y-auto p-4 md:p-margin-desktop w-full max-w-container-max mx-auto">
+<!-- Page Header -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+<div>
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-2">Inventory Management</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Manage your products, pricing, and stock levels.</p>
+</div>
+<div class="flex items-center gap-3 w-full md:w-auto">
+<button class="flex-1 md:flex-none bg-surface-container-highest text-on-surface border border-outline-variant rounded px-4 py-2 font-label-md text-label-md hover:bg-surface-variant transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="download">download</span> Export
+                    </button>
+<button class="flex-1 md:flex-none bg-secondary text-on-secondary rounded px-4 py-2 font-label-md text-label-md hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="add">add</span> Add Product
+                    </button>
+</div>
+</div>
+<!-- Toolbar / Filters -->
+<div class="bg-surface rounded-xl shadow-sm border border-outline-variant/20 p-4 mb-6 flex flex-col lg:flex-row gap-4 items-center justify-between backdrop-blur-md bg-white/50">
+<div class="relative w-full lg:w-96">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant" data-icon="search">search</span>
+<input class="w-full pl-10 pr-4 py-2 rounded border border-outline-variant bg-surface focus:border-secondary focus:ring-1 focus:ring-secondary outline-none font-body-md text-body-md text-on-surface transition-all placeholder:text-subtle-gray" placeholder="Search by SKU, Name, or Category..." type="text"/>
+</div>
+<div class="flex flex-wrap items-center gap-3 w-full lg:w-auto">
+<select class="border border-outline-variant rounded px-3 py-2 bg-surface text-on-surface font-label-md text-label-md focus:border-secondary outline-none appearance-none min-w-[140px]">
+<option>All Categories</option>
+<option>Float Glass</option>
+<option>Tempered Glass</option>
+<option>Wood Frames</option>
+<option>Metal Frames</option>
+</select>
+<select class="border border-outline-variant rounded px-3 py-2 bg-surface text-on-surface font-label-md text-label-md focus:border-secondary outline-none appearance-none min-w-[120px]">
+<option>Status: All</option>
+<option>In Stock</option>
+<option>Low Stock</option>
+<option>Out of Stock</option>
+</select>
+<button class="p-2 border border-outline-variant rounded text-on-surface-variant hover:bg-surface-variant transition-colors flex items-center justify-center bg-surface">
+<span class="material-symbols-outlined" data-icon="filter_list">filter_list</span>
+</button>
+</div>
+</div>
+<!-- Data Table (Bento/Card Style on Mobile, Standard on Desktop) -->
+<div class="bg-surface rounded-xl shadow-sm border border-outline-variant/20 overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-outline-variant/30 text-on-surface-variant font-label-md text-label-md">
+<th class="p-4 w-12"><input class="rounded border-outline-variant text-secondary focus:ring-secondary w-4 h-4" type="checkbox"/></th>
+<th class="p-4 min-w-[250px]">Product</th>
+<th class="p-4">SKU</th>
+<th class="p-4">Category</th>
+<th class="p-4 text-right">Price</th>
+<th class="p-4">Stock</th>
+<th class="p-4">Status</th>
+<th class="p-4 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/20 font-body-md text-body-md">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="p-4"><input class="rounded border-outline-variant text-secondary focus:ring-secondary w-4 h-4" type="checkbox"/></td>
+<td class="p-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded bg-surface-variant border border-outline-variant/30 flex-shrink-0 overflow-hidden relative">
+<div class="absolute inset-0 bg-glass-tint/20 backdrop-blur-sm z-10 border border-white/50 rounded"></div>
+<img alt="Clear Float Glass 3mm" class="object-cover w-full h-full relative z-0" data-alt="A close-up studio shot of a perfectly clear, thick sheet of high-quality float glass resting on a pristine white surface. The lighting is crisp and modern, highlighting the subtle green edge of the glass against the minimalist, light-mode background with deep blue subtle shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgD4dCriX42DUW4zLQbBJjXudpK3u5Z-0IM1C7pUhOx-C_nWoiGG3oL96jtfB_24bpEReEqvgJ-1ReuO67PK0UqWYj465XEgdOyStAFUmFiMWYpooYezMpqQh8VXiaRiAFmy8eMyTA4vMidg0aL1JIVO0c_7neTU_CilC5OcyK_PbcBAbls87z3JaXA_P4wLS8nY2w-jsbMnvCu7NsAmr7G73Sw1NPLG9tki4NktLyv-9kv9F90PZeiw"/>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">Clear Float Glass - 3mm</span>
+<span class="font-caption text-caption text-subtle-gray">Standard Cut Sheet</span>
+</div>
+</div>
+</td>
+<td class="p-4 text-on-surface-variant">GL-FL-03-CLR</td>
+<td class="p-4 text-on-surface-variant">Float Glass</td>
+<td class="p-4 text-right font-bold text-on-surface">$12.50 <span class="text-subtle-gray font-normal text-[12px]">/sq ft</span></td>
+<td class="p-4 text-on-surface-variant">450</td>
+<td class="p-4">
+<span class="inline-flex items-center px-2 py-1 rounded bg-[#E6F4EA] text-[#137333] font-caption text-caption font-bold border border-[#CEEAD6]">In Stock</span>
+</td>
+<td class="p-4 text-right">
+<div class="flex justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-1.5 text-secondary hover:bg-secondary-container hover:text-on-secondary-container rounded transition-colors" title="Quick Edit">
+<span class="material-symbols-outlined text-[20px]" data-icon="edit">edit</span>
+</button>
+<button class="p-1.5 text-error hover:bg-error-container hover:text-on-error-container rounded transition-colors" title="Delete">
+<span class="material-symbols-outlined text-[20px]" data-icon="delete">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="p-4"><input class="rounded border-outline-variant text-secondary focus:ring-secondary w-4 h-4" type="checkbox"/></td>
+<td class="p-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded bg-surface-variant border border-outline-variant/30 flex-shrink-0 overflow-hidden">
+<img alt="Matte Black Aluminum Frame" class="object-cover w-full h-full" data-alt="A detailed macro shot of a sleek, brushed aluminum picture frame corner. The metal texture is precise and modern, set against a soft, light-grey background. The lighting is bright and even, fitting a professional e-commerce product catalog with an artisan modern vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAajc57H50t4OsP7oY5t8P4UCwe24E-RaT70u1qNdtz7bwzG2RflFCvbRUS6CmFKMm-MHDv8XaOQxtmCtGX7CaYI4-_QW4SSEt62XaOV4poQbVCQ0rh3rYRzO4CsEh6AaOuil1tb1jiPO3GkLr6_9rxhNt8BPTzTzYJeb5zT0JXXxmEDgIh1Wx1xpsVKWer7yaOFUfk9zv8eadTgFwhZ4dpA-gE6xoccbsjoG0T4IktC_5i6q5EUImLiw"/>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">Premium Aluminum Profile - Matte Black</span>
+<span class="font-caption text-caption text-subtle-gray">Profile 12A</span>
+</div>
+</div>
+</td>
+<td class="p-4 text-on-surface-variant">FR-AL-12A-MB</td>
+<td class="p-4 text-on-surface-variant">Metal Frames</td>
+<td class="p-4 text-right font-bold text-on-surface">$8.75 <span class="text-subtle-gray font-normal text-[12px]">/ft</span></td>
+<td class="p-4 text-on-surface-variant">12</td>
+<td class="p-4">
+<span class="inline-flex items-center px-2 py-1 rounded bg-[#FEF7E0] text-[#B06000] font-caption text-caption font-bold border border-[#FEEFC3]">Low Stock</span>
+</td>
+<td class="p-4 text-right">
+<div class="flex justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-1.5 text-secondary hover:bg-secondary-container hover:text-on-secondary-container rounded transition-colors" title="Quick Edit">
+<span class="material-symbols-outlined text-[20px]" data-icon="edit">edit</span>
+</button>
+<button class="p-1.5 text-error hover:bg-error-container hover:text-on-error-container rounded transition-colors" title="Delete">
+<span class="material-symbols-outlined text-[20px]" data-icon="delete">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="p-4"><input class="rounded border-outline-variant text-secondary focus:ring-secondary w-4 h-4" type="checkbox"/></td>
+<td class="p-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded bg-surface-variant border border-outline-variant/30 flex-shrink-0 overflow-hidden relative">
+<div class="absolute inset-0 bg-glass-tint/30 backdrop-blur-md z-10 border border-white/60 rounded"></div>
+<img alt="Tempered Safety Glass 6mm" class="object-cover w-full h-full relative z-0" data-alt="A photograph of architectural tempered glass showing safety edges. The glass reflects a clean, brightly lit, minimalist environment. The aesthetic is highly professional, focusing on transparency and subtle reflections in a light-mode setting with navy accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKfyAZCi3S0_dDfyqY7XORMywNJ43f399Jeq8XpH-MmOD7sqVPNDz4SaACWT6TnBbJaC8TURk_U5hZyiYK4a7ruE15A-wkBLAZoB8vZ1ndxPzvap9FF5UUklH693qpFipltZTi54K5fpMsOzZl3i1ILDjkqVASmkue6IkC6h57BuaS0HaX1lc5dzvsz5WXtDV9tcp3wo9Fg8PQQ1RRqmdTKN_-MAUbNRngpAdHzV4vER4ZrVFFQPAVOQ"/>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">Tempered Safety Glass - 6mm</span>
+<span class="font-caption text-caption text-subtle-gray">Polished Edges</span>
+</div>
+</div>
+</td>
+<td class="p-4 text-on-surface-variant">GL-TE-06-PE</td>
+<td class="p-4 text-on-surface-variant">Tempered Glass</td>
+<td class="p-4 text-right font-bold text-on-surface">$24.00 <span class="text-subtle-gray font-normal text-[12px]">/sq ft</span></td>
+<td class="p-4 text-on-surface-variant">0</td>
+<td class="p-4">
+<span class="inline-flex items-center px-2 py-1 rounded bg-[#FCE8E6] text-[#C5221F] font-caption text-caption font-bold border border-[#FAD2CF]">Out of Stock</span>
+</td>
+<td class="p-4 text-right">
+<div class="flex justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-1.5 text-secondary hover:bg-secondary-container hover:text-on-secondary-container rounded transition-colors" title="Quick Edit">
+<span class="material-symbols-outlined text-[20px]" data-icon="edit">edit</span>
+</button>
+<button class="p-1.5 text-error hover:bg-error-container hover:text-on-error-container rounded transition-colors" title="Delete">
+<span class="material-symbols-outlined text-[20px]" data-icon="delete">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination -->
+<div class="bg-surface-container-low border-t border-outline-variant/30 p-4 flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Showing 1 to 3 of 124 entries</span>
+<div class="flex gap-1">
+<button class="px-3 py-1 rounded border border-outline-variant text-on-surface-variant hover:bg-surface-variant disabled:opacity-50 transition-colors" disabled="">Previous</button>
+<button class="px-3 py-1 rounded bg-secondary text-on-secondary font-bold transition-colors">1</button>
+<button class="px-3 py-1 rounded border border-outline-variant text-on-surface hover:bg-surface-variant transition-colors">2</button>
+<button class="px-3 py-1 rounded border border-outline-variant text-on-surface hover:bg-surface-variant transition-colors">3</button>
+<span class="px-2 py-1 text-on-surface-variant">...</span>
+<button class="px-3 py-1 rounded border border-outline-variant text-on-surface hover:bg-surface-variant transition-colors">Next</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="bg-surface/90 dark:bg-charcoal-bg/90 md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-4 pt-2 z-50 rounded-t-full backdrop-blur-xl border-t border-outline-variant/30 dark:border-outline/20 shadow-[0_-4px_10px_rgba(0,0,0,0.05)]">
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-caption text-caption">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="font-caption text-caption">Collections</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-caption text-caption">Cart</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-caption text-caption">Profile</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-full px-5 py-1.5 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="admin_panel_settings">admin_panel_settings</span>
+<span class="font-caption text-caption">Admin</span>
+</button>
+</nav>
+</body></html>

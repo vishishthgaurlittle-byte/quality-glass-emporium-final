@@ -1,0 +1,340 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Quality Glass Emporium - Product Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "on-tertiary-fixed-variant": "#5d4201",
+                            "inverse-on-surface": "#f3f0ef",
+                            "primary-fixed-dim": "#a8c9f3",
+                            "on-primary-fixed": "#001d36",
+                            "subtle-gray": "#777777",
+                            "secondary-fixed-dim": "#a5c8ff",
+                            "secondary-fixed": "#d4e3ff",
+                            "inverse-surface": "#313030",
+                            "on-surface": "#1c1b1b",
+                            "on-primary": "#ffffff",
+                            "success-green": "#117B01",
+                            "tertiary": "#1e1300",
+                            "on-surface-variant": "#43474e",
+                            "secondary-container": "#479afd",
+                            "tertiary-container": "#382600",
+                            "on-tertiary-container": "#ae8b46",
+                            "error-container": "#ffdad6",
+                            "inverse-primary": "#a8c9f3",
+                            "glass-tint": "#F4F7F9",
+                            "on-secondary-fixed": "#001c3a",
+                            "surface-container": "#f0edec",
+                            "outline": "#73777f",
+                            "surface-container-high": "#ebe7e7",
+                            "error": "#ba1a1a",
+                            "surface-container-lowest": "#ffffff",
+                            "charcoal-bg": "#1A1C1E",
+                            "on-primary-fixed-variant": "#27496c",
+                            "secondary": "#005faf",
+                            "on-error": "#ffffff",
+                            "primary-container": "#002b4d",
+                            "surface-tint": "#406185",
+                            "surface-container-highest": "#e5e2e1",
+                            "primary": "#00162c",
+                            "on-primary-container": "#7393bb",
+                            "on-secondary": "#ffffff",
+                            "surface-dim": "#dcd9d9",
+                            "outline-variant": "#c3c6cf",
+                            "primary-fixed": "#d1e4ff",
+                            "surface-variant": "#e5e2e1",
+                            "background": "#fcf9f8",
+                            "surface": "#fcf9f8",
+                            "on-error-container": "#93000a",
+                            "on-secondary-container": "#00315f",
+                            "tertiary-fixed-dim": "#e9c176",
+                            "tertiary-fixed": "#ffdea5",
+                            "on-background": "#1c1b1b",
+                            "surface-bright": "#fcf9f8",
+                            "surface-container-low": "#f6f3f2",
+                            "on-tertiary": "#ffffff",
+                            "on-tertiary-fixed": "#261900",
+                            "on-secondary-fixed-variant": "#004786"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.125rem",
+                            "lg": "0.25rem",
+                            "xl": "0.5rem",
+                            "full": "0.75rem"
+                    },
+                    "spacing": {
+                            "margin-mobile": "20px",
+                            "container-max": "1280px",
+                            "gutter-desktop": "32px",
+                            "margin-desktop": "64px",
+                            "unit": "8px",
+                            "gutter-mobile": "16px"
+                    },
+                    "fontFamily": {
+                            "headline-md": ["Manrope"],
+                            "headline-lg": ["Manrope"],
+                            "label-md": ["Manrope"],
+                            "display-lg": ["Manrope"],
+                            "headline-lg-mobile": ["Manrope"],
+                            "body-lg": ["Manrope"],
+                            "body-md": ["Manrope"],
+                            "caption": ["Manrope"]
+                    },
+                    "fontSize": {
+                            "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                            "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                            "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                            "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                            "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                            "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-effect {
+            background: rgba(244, 247, 249, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky bg-surface dark:bg-inverse-surface bg-glass-tint/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm z-50">
+<div class="flex justify-between items-center px-margin-desktop w-full max-w-container-max mx-auto py-4">
+<div class="flex items-center gap-4 cursor-pointer active:opacity-80 transition-all text-secondary dark:text-secondary-fixed-dim">
+<span class="material-symbols-outlined font-headline-md text-headline-md">menu</span>
+</div>
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
+                Quality Glass Emporium
+            </div>
+<div class="flex items-center gap-4 cursor-pointer active:opacity-80 transition-all text-secondary dark:text-secondary-fixed-dim hover:bg-surface-container-high dark:hover:bg-on-surface-variant/10 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined font-headline-md text-headline-md">dark_mode</span>
+</div>
+</div>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex justify-center gap-8 py-2 border-t border-outline-variant/10">
+<a class="text-on-surface-variant dark:text-surface-variant font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors py-2" href="#">Collections</a>
+<a class="text-secondary dark:text-secondary-fixed font-bold border-b-2 border-secondary font-label-md text-label-md py-2" href="#">Frames</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors py-2" href="#">About</a>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 md:py-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-mobile md:gap-gutter-desktop">
+<!-- Image Gallery Column -->
+<div class="md:col-span-7 flex flex-col gap-4">
+<div class="w-full aspect-[4/3] bg-surface-container rounded-xl overflow-hidden shadow-sm relative group cursor-zoom-in">
+<img alt="Large product image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLvs8glZE8N7jK5D808-t789KgAwZl0I210VBmbNiBcM2KkBQO9iZ62hhgIhiWH4m9J2ctimt8Ts3dwNbTCOFWRPEYO3m79DI_O0DBULkzgk6Ci5yiGoM2SSZI3kBPgrGcXiuVyZhdYTC_ZN_YcNIl89i_ZsQQDBcvhLKYr57roQbstG8fojV7GLmuLhrnEovfFBcDdIOS-HP48DLpdJvXyKmrbdhMGSTNNyy8d1fQOmti14Zje1HgUGDXNs">
+<div class="absolute bottom-4 right-4 bg-surface/90 backdrop-blur-sm rounded-full p-2 shadow-sm text-on-surface-variant flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">zoom_in</span>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<div class="aspect-square bg-surface-container rounded-lg overflow-hidden border-2 border-secondary cursor-pointer">
+<img class="w-full h-full object-cover" data-alt="A detailed close-up shot of a dark brown wooden picture frame corner, showing the wood grain and precise miter joint. The lighting is soft and natural, emphasizing the texture and quality craftsmanship. The background is a clean, bright white surface, fitting a modern artisanal e-commerce aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0deHpOcBxKeTT0PHLaDpu4X7s3ndCflvOyTl9thmDWWmPLCqGVcg-46405FjhAhHSGiWj5UEXd0SzvmyepNjzs2z9l5uCXLPXBUOO7YHKRZLweWqiLI941pj9K7pXjcHQqELzZQBNSxSKV4mmn6rbiVZ2w4lMTpEyo3cFbtkHJB8SfkUdPXZ8m0SYbv9_YMWQQMvz-zTY0F9RYjaCRa80TKkxd_vngPIZiZjkVXrn6y-QLyOHnG0Qsg">
+</div>
+<div class="aspect-square bg-surface-container rounded-lg overflow-hidden border border-outline-variant hover:border-secondary/50 cursor-pointer transition-colors opacity-70 hover:opacity-100">
+<img class="w-full h-full object-cover" data-alt="A lifestyle shot showing multiple dark wooden picture frames hanging on a light beige wall. Inside the frames are various coastal and surfing photographs. The lighting is bright, creating soft shadows. The overall mood is relaxed, sophisticated, and modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxI5nL560akGJLj1bZ8BT5QtT9-1SHyrPCj5g0yGz9hJtijzWg9ucLvR8YbdTJwYxR0IHLFD6ZQseqCm-GEjZbkAwdOSCoFq5NBt9x9sJcGCqctkKRQKkM6yhuSscsrdU6zQE_B14e_qfgc2prXj37HdSFIy7Jbqpg2uUha4uk9zv5Zwmw5P2rn8bErxrktctGyexa7yJ5Z8zddz7VCUTDWe_w7s3NkvkLKQ7X1ZVd2FkTmJ02Mxq7Mw">
+</div>
+<div class="aspect-square bg-surface-container rounded-lg overflow-hidden border border-outline-variant hover:border-secondary/50 cursor-pointer transition-colors opacity-70 hover:opacity-100">
+<img class="w-full h-full object-cover" data-alt="A detailed macro photograph focusing on the clear, high-quality acrylic glass used in a picture frame. The edge of the acrylic catches a subtle reflection of bright, natural light, demonstrating its clarity and premium thickness against a clean, white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQJZ-vDdZ4d6emf3FnfLItx6LMneQnzyVtF4q-hhxxUPGlpObJPZggTcBTb0RBpIekTZVsBi5Ugl86V9XaINfNIW7PqWyKhe2uAzYlwnaOn0fth6ftXeCzHwAb9fv5mk_-Igp1CV9XmLl5-s8__pnnMhWgimiS5wmP_dqlaoMPCM3SbhdSi94xkJy1PllFMN6eQW8yFLovYcXoh8C8gONf_Puswzl0ziIBs2fDRNtrkavbqMtCJp86Qw">
+</div>
+<div class="aspect-square bg-surface-container rounded-lg flex items-center justify-center border border-outline-variant hover:border-secondary/50 cursor-pointer transition-colors bg-surface-container-low">
+<span class="material-symbols-outlined text-outline text-3xl">play_circle</span>
+</div>
+</div>
+</div>
+<!-- Product Details Column -->
+<div class="md:col-span-5 flex flex-col gap-6">
+<!-- Title & Price -->
+<div>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-2">Artisan Wood Frame</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-4">Premium dark oak with museum-grade acrylic glass.</p>
+<div class="font-headline-lg text-headline-lg text-secondary">$89.00 <span class="font-body-md text-body-md text-subtle-gray line-through ml-2">$110.00</span></div>
+</div>
+<hr class="border-outline-variant/30">
+<!-- Configuration Options -->
+<div class="flex flex-col gap-6">
+<!-- Size Selection -->
+<div>
+<div class="flex justify-between items-center mb-3">
+<span class="font-label-md text-label-md text-on-surface font-bold">Size</span>
+<a class="font-caption text-caption text-secondary hover:underline" href="#">Size Guide</a>
+</div>
+<div class="grid grid-cols-3 gap-3">
+<button class="py-2 border border-outline-variant rounded-lg font-label-md text-label-md text-on-surface hover:border-secondary transition-colors text-center">8" x 10"</button>
+<button class="py-2 border-2 border-secondary bg-surface-container-low rounded-lg font-label-md text-label-md text-primary transition-colors text-center relative overflow-hidden">
+                                11" x 14"
+                                <div class="absolute top-0 right-0 w-4 h-4 bg-secondary flex items-center justify-center rounded-bl-lg">
+<span class="material-symbols-outlined text-[10px] text-white">check</span>
+</div>
+</button>
+<button class="py-2 border border-outline-variant rounded-lg font-label-md text-label-md text-on-surface hover:border-secondary transition-colors text-center">16" x 20"</button>
+</div>
+<!-- Custom Size Toggle -->
+<div class="mt-4 p-4 bg-glass-tint rounded-lg border border-outline-variant/20">
+<label class="flex items-center gap-2 cursor-pointer mb-3">
+<input class="form-checkbox text-secondary rounded border-subtle-gray focus:ring-secondary h-4 w-4" type="checkbox">
+<span class="font-label-md text-label-md text-on-surface">Need a custom size?</span>
+</label>
+<div class="flex gap-4 opacity-50 pointer-events-none transition-opacity"> <!-- Add logic to toggle opacity -->
+<div class="flex-1">
+<label class="font-caption text-caption text-on-surface-variant block mb-1">Width (in)</label>
+<input class="w-full border border-subtle-gray rounded px-3 py-2 font-body-md text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none" placeholder="11" type="number">
+</div>
+<div class="flex items-end pb-2">
+<span class="material-symbols-outlined text-subtle-gray text-sm">close</span>
+</div>
+<div class="flex-1">
+<label class="font-caption text-caption text-on-surface-variant block mb-1">Height (in)</label>
+<input class="w-full border border-subtle-gray rounded px-3 py-2 font-body-md text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none" placeholder="14" type="number">
+</div>
+</div>
+</div>
+</div>
+<!-- Material/Color -->
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block mb-3">Finish: <span class="font-normal text-on-surface-variant">Dark Espresso</span></span>
+<div class="flex gap-3">
+<button aria-label="Dark Espresso" class="w-10 h-10 rounded-full bg-[#3b2f2f] border-2 border-secondary ring-2 ring-transparent focus:outline-none relative shadow-sm">
+<span class="material-symbols-outlined absolute inset-0 m-auto text-white text-sm w-fit h-fit">check</span>
+</button>
+<button aria-label="Natural Oak" class="w-10 h-10 rounded-full bg-[#d2b48c] border border-outline-variant hover:border-subtle-gray focus:outline-none shadow-sm"></button>
+<button aria-label="Matte White" class="w-10 h-10 rounded-full bg-white border border-outline-variant hover:border-subtle-gray focus:outline-none shadow-sm"></button>
+<button aria-label="Matte Black" class="w-10 h-10 rounded-full bg-black border border-outline-variant hover:border-subtle-gray focus:outline-none shadow-sm"></button>
+</div>
+</div>
+<!-- Matting -->
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block mb-3">Mat Style</span>
+<div class="flex flex-wrap gap-2">
+<div class="px-4 py-1.5 bg-primary text-white rounded-full font-caption text-caption cursor-pointer">White 1.5"</div>
+<div class="px-4 py-1.5 bg-surface-container hover:bg-surface-container-highest text-on-surface-variant rounded-full font-caption text-caption cursor-pointer border border-outline-variant/30">Off-White 2"</div>
+<div class="px-4 py-1.5 bg-surface-container hover:bg-surface-container-highest text-on-surface-variant rounded-full font-caption text-caption cursor-pointer border border-outline-variant/30">No Mat</div>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="mt-4 flex flex-col gap-3">
+<button class="w-full py-4 border border-primary text-primary font-label-md text-label-md rounded-lg flex items-center justify-center gap-2 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">upload</span>
+                        Upload Your Photo
+                    </button>
+<div class="flex gap-3">
+<div class="flex border border-outline-variant rounded-lg w-1/3">
+<button class="w-1/3 flex justify-center items-center text-on-surface-variant hover:bg-surface-container rounded-l-lg"><span class="material-symbols-outlined text-sm">remove</span></button>
+<input class="w-1/3 text-center border-none focus:ring-0 font-body-md text-body-md p-0 bg-transparent" readonly="" type="text" value="1">
+<button class="w-1/3 flex justify-center items-center text-on-surface-variant hover:bg-surface-container rounded-r-lg"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+<button class="flex-grow py-4 bg-secondary text-white font-label-md text-label-md rounded-lg hover:bg-secondary/90 transition-colors shadow-md shadow-secondary/20">
+                            Add to Cart
+                        </button>
+</div>
+</div>
+<!-- Accordion Details -->
+<div class="mt-4 border-t border-outline-variant/30">
+<details class="group py-4 border-b border-outline-variant/30" open="">
+<summary class="flex justify-between items-center font-label-md text-label-md text-on-surface cursor-pointer list-none">
+<span class="font-bold">Description</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-on-surface-variant">expand_more</span>
+</summary>
+<div class="mt-3 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            Crafted from sustainably sourced oak, this frame offers a deep, rich profile perfect for fine art prints and photographs. It features museum-grade acrylic glass that provides exceptional clarity while protecting your art from UV rays and dust.
+                        </div>
+</details>
+<details class="group py-4 border-b border-outline-variant/30">
+<summary class="flex justify-between items-center font-label-md text-label-md text-on-surface cursor-pointer list-none">
+<span class="font-bold">Specifications</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-on-surface-variant">expand_more</span>
+</summary>
+<div class="mt-3 font-body-md text-body-md text-on-surface-variant">
+<ul class="list-disc pl-5 space-y-1">
+<li>Frame width: 1.25 inches</li>
+<li>Frame depth: 1.5 inches</li>
+<li>Material: Solid Oak Wood</li>
+<li>Glazing: UV-protective Acrylic</li>
+<li>Hardware: Hanging wire included</li>
+</ul>
+</div>
+</details>
+<details class="group py-4 border-b border-outline-variant/30">
+<summary class="flex justify-between items-center font-label-md text-label-md text-on-surface cursor-pointer list-none">
+<span class="font-bold">Shipping &amp; Returns</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-on-surface-variant">expand_more</span>
+</summary>
+<div class="mt-3 font-body-md text-body-md text-on-surface-variant">
+                            Ships within 3-5 business days. Free shipping on orders over $150. Returns accepted within 30 days for undamaged items in original packaging.
+                        </div>
+</details>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-4 pt-2 bg-surface/90 dark:bg-charcoal-bg/90 backdrop-blur-xl border-t border-outline-variant/30 dark:border-outline/20 shadow-[0_-4px_10px_rgba(0,0,0,0.05)] z-50 rounded-t-full">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined font-caption text-caption">home</span>
+<span class="font-caption text-caption mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-full px-5 py-1.5 scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined font-caption text-caption" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+<span class="font-caption text-caption mt-1">Collections</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform relative" href="#">
+<span class="material-symbols-outlined font-caption text-caption">shopping_cart</span>
+<span class="absolute top-0 right-1 w-3 h-3 bg-error rounded-full border-2 border-surface"></span>
+<span class="font-caption text-caption mt-1">Cart</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined font-caption text-caption">person</span>
+<span class="font-caption text-caption mt-1">Profile</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface w-full py-8 mt-12 border-t border-outline-variant dark:border-outline/10 shadow-none pb-24 md:pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter-desktop px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1 mb-6 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left">
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed font-bold mb-2">Quality Glass Emporium</span>
+<p class="font-caption text-caption text-on-surface-variant dark:text-surface-variant opacity-80">Crafting clarity and elegance for your cherished memories.</p>
+</div>
+<div class="col-span-1 flex flex-col items-center md:items-start mb-6 md:mb-0">
+<span class="font-label-md text-label-md font-bold mb-3 text-on-surface dark:text-on-surface-variant">Shop</span>
+<a class="font-caption text-caption text-on-surface-variant dark:text-surface-variant hover:text-secondary hover:underline transition-all opacity-100 hover:opacity-80 mb-2" href="#">Frames</a>
+<a class="font-caption text-caption text-on-surface-variant dark:text-surface-variant hover:text-secondary hover:underline transition-all opacity-100 hover:opacity-80 mb-2" href="#">Glass Types</a>
+<a class="font-caption text-caption text-on-surface-variant dark:text-surface-variant hover:text-secondary hover:underline transition-all opacity-100 hover:opacity-80" href="#">Matting</a>
+</div>
+<div class="col-span-1 flex flex-col items-center md:items-start mb-6 md:mb-0">
+<span class="font-label-md text-label-md font-bold mb-3 text-on-surface dark:text-on-surface-variant">Support</span>
+<a class="font-caption text-caption text-on-surface-variant dark:text-surface-variant hover:text-secondary hover:underline transition-all opacity-100 hover:opacity-80 mb-2" href="#">About Us</a>
+<a class="font-caption text-caption text-on-surface-variant dark:text-surface-variant hover:text-secondary hover:underline transition-all opacity-100 hover:opacity-80 mb-2" href="#">Contact</a>
+<a class="font-caption text-caption text-on-surface-variant dark:text-surface-variant hover:text-secondary hover:underline transition-all opacity-100 hover:opacity-80" href="#">Shipping Policy</a>
+</div>
+<div class="col-span-1 flex flex-col items-center md:items-start">
+<span class="font-label-md text-label-md font-bold mb-3 text-on-surface dark:text-on-surface-variant">Legal</span>
+<a class="font-caption text-caption text-on-surface-variant dark:text-surface-variant hover:text-secondary hover:underline transition-all opacity-100 hover:opacity-80 mb-2" href="#">Privacy</a>
+<a class="font-caption text-caption text-on-surface-variant dark:text-surface-variant hover:text-secondary hover:underline transition-all opacity-100 hover:opacity-80 mb-4" href="#">Terms of Service</a>
+<div class="font-caption text-caption text-on-surface-variant dark:text-surface-variant mt-auto">
+                    © 2024 Quality Glass Emporium. All rights reserved.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>

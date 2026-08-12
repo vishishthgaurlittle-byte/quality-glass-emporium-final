@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SEO &amp; Meta Settings - Quality Glass Emporium</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-secondary": "#ffffff",
+                "success-green": "#117B01",
+                "on-primary-fixed": "#001d36",
+                "surface-bright": "#fcf9f8",
+                "primary-fixed": "#d1e4ff",
+                "tertiary-fixed": "#ffdea5",
+                "error": "#ba1a1a",
+                "on-tertiary-fixed": "#261900",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed-dim": "#a8c9f3",
+                "on-surface": "#1c1b1b",
+                "tertiary-fixed-dim": "#e9c176",
+                "on-secondary-fixed-variant": "#004786",
+                "on-tertiary-fixed-variant": "#5d4201",
+                "surface-container-low": "#f6f3f2",
+                "on-tertiary-container": "#ae8b46",
+                "on-secondary-container": "#00315f",
+                "charcoal-bg": "#1A1C1E",
+                "surface-container-highest": "#e5e2e1",
+                "inverse-on-surface": "#f3f0ef",
+                "outline": "#73777f",
+                "surface-variant": "#e5e2e1",
+                "primary-container": "#002b4d",
+                "on-surface-variant": "#43474e",
+                "subtle-gray": "#777777",
+                "secondary-fixed": "#d4e3ff",
+                "surface-tint": "#406185",
+                "outline-variant": "#c3c6cf",
+                "on-primary": "#ffffff",
+                "surface-container-high": "#ebe7e7",
+                "inverse-primary": "#a8c9f3",
+                "on-primary-container": "#7393bb",
+                "on-error-container": "#93000a",
+                "surface": "#fcf9f8",
+                "surface-container": "#f0edec",
+                "on-secondary-fixed": "#001c3a",
+                "primary": "#00162c",
+                "tertiary": "#1e1300",
+                "on-background": "#1c1b1b",
+                "inverse-surface": "#313030",
+                "on-primary-fixed-variant": "#27496c",
+                "secondary-fixed-dim": "#a5c8ff",
+                "glass-tint": "#F4F7F9",
+                "secondary": "#005faf",
+                "error-container": "#ffdad6",
+                "on-error": "#ffffff",
+                "secondary-container": "#479afd",
+                "background": "#fcf9f8",
+                "on-tertiary": "#ffffff",
+                "surface-dim": "#dcd9d9",
+                "tertiary-container": "#382600"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "gutter-mobile": "16px",
+                "margin-desktop": "64px",
+                "margin-mobile": "20px",
+                "unit": "8px",
+                "gutter-desktop": "32px",
+                "container-max": "1280px"
+        },
+        "fontFamily": {
+                "headline-lg-mobile": [
+                        "Manrope"
+                ],
+                "headline-md": [
+                        "Manrope"
+                ],
+                "body-md": [
+                        "Manrope"
+                ],
+                "label-md": [
+                        "Manrope"
+                ],
+                "body-lg": [
+                        "Manrope"
+                ],
+                "caption": [
+                        "Manrope"
+                ],
+                "headline-lg": [
+                        "Manrope"
+                ],
+                "display-lg": [
+                        "Manrope"
+                ]
+        },
+        "fontSize": {
+                "headline-lg-mobile": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.01em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "caption": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+          body {
+              background-color: theme('colors.background');
+              color: theme('colors.on-background');
+          }
+          .glass-panel {
+              background: rgba(244, 247, 249, 0.8);
+              backdrop-filter: blur(12px);
+              -webkit-backdrop-filter: blur(12px);
+              border: 1px solid rgba(255, 255, 255, 0.5);
+          }
+      </style>
+</head>
+<body class="flex flex-col md:flex-row min-h-screen bg-background">
+<!-- NavigationDrawer -->
+<aside class="w-72 bg-surface-container-low shadow-md flex flex-col shrink-0 h-screen overflow-y-auto fixed left-0 top-0 z-40 hidden md:flex border-r border-outline-variant/20">
+<div class="p-6">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-[10px] font-bold tracking-widest uppercase bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">Secure Control Panel</span>
+<span class="text-[10px] font-bold tracking-widest uppercase bg-success-green/10 text-success-green px-2 py-0.5 rounded border border-success-green/20">Developer</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-primary mt-4 mb-2">Quality Glass Emporium</h1>
+<p class="text-xs text-on-surface-variant font-mono">@ADMIN_PORTAL_2024</p>
+</div>
+<nav class="flex-1 px-4 space-y-1 overflow-y-auto">
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="text-sm">Dashboard Overview</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">edit_note</span>
+<span class="text-sm">Edit Main Page Website</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">inventory_2</span>
+<span class="text-sm">Products &amp; Pricing</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">category</span>
+<span class="text-sm">Categories Taxonomy</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">local_shipping</span>
+<span class="text-sm">Orders &amp; Logistics</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">confirmation_number</span>
+<span class="text-sm">Coupons &amp; Discounts</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">view_carousel</span>
+<span class="text-sm">Banners &amp; Carousels</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+<span class="text-sm">Reviews Moderation</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">group</span>
+<span class="text-sm">Customer Accounts</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">payments</span>
+<span class="text-sm">Payment Gateways</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shipping</span>
+<span class="text-sm">Shipping &amp; Taxes</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full bg-secondary-container text-on-secondary-container font-label-md transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+<span class="text-sm font-semibold">SEO &amp; Meta Settings</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">storefront</span>
+<span class="text-sm">Branding &amp; Store Info</span>
+</a>
+</nav>
+<div class="p-4 mt-8 border-t border-outline-variant/30 space-y-2">
+<a class="flex items-center justify-center gap-2 w-full py-2.5 rounded-full border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all font-label-md" href="#">
+<span class="material-symbols-outlined text-sm">visibility</span>
+                    View Live Customer Site
+                </a>
+<button class="flex items-center gap-2 w-full px-4 py-2.5 text-error hover:bg-error-container/50 rounded-full transition-all font-label-md">
+<span class="material-symbols-outlined">logout</span>
+                    Log Out Admin
+                </button>
+</div>
+</aside>
+<!-- TopAppBar for Mobile -->
+<header class="md:hidden flex justify-between items-center px-margin-desktop w-full max-w-container-max mx-auto bg-surface dark:bg-inverse-surface text-secondary dark:text-secondary-fixed-dim font-headline-md text-headline-md w-full top-0 sticky bg-glass-tint/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm cursor-pointer active:opacity-80 transition-all z-40 px-4 py-3">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Quality Glass Emporium</div>
+<span class="material-symbols-outlined" data-icon="dark_mode">dark_mode</span>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 md:ml-72 p-margin-mobile md:p-gutter-desktop max-w-container-max w-full mx-auto pb-24 md:pb-12">
+<div class="mb-8">
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-2">SEO &amp; Meta Settings</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Manage your site's search engine presence and metadata.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Left Column: Settings Form (8 columns) -->
+<div class="lg:col-span-8 space-y-6">
+<!-- Global SEO Settings Card -->
+<div class="glass-panel rounded-xl p-6 shadow-sm">
+<h2 class="font-headline-md text-headline-md text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">public</span> Global Metadata
+                    </h2>
+<form class="space-y-5">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Site Title</label>
+<input class="w-full bg-surface border border-subtle-gray rounded-lg px-4 py-2 font-body-md text-body-md text-on-surface focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-colors" placeholder="Enter site title" type="text" value="Quality Glass Emporium"/>
+<p class="text-caption font-caption text-on-surface-variant mt-1">This appears in browser tabs and search engine results.</p>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Meta Description</label>
+<textarea class="w-full bg-surface border border-subtle-gray rounded-lg px-4 py-2 font-body-md text-body-md text-on-surface focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-colors" placeholder="Enter meta description" rows="3">Premium artisan glass frames and custom display solutions for your most cherished memories. Explore our collection of handcrafted designs.</textarea>
+<div class="flex justify-between items-center mt-1">
+<p class="text-caption font-caption text-on-surface-variant">Recommended: 150-160 characters.</p>
+<span class="text-caption font-caption text-secondary">142 chars</span>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Target Keywords</label>
+<div class="w-full bg-surface border border-subtle-gray rounded-lg px-2 py-2 flex flex-wrap gap-2 items-center focus-within:border-secondary focus-within:ring-1 focus-within:ring-secondary transition-colors">
+<span class="bg-surface-container-highest text-primary px-3 py-1 rounded-full text-caption font-label-md flex items-center gap-1">
+                                    artisan glass <span class="material-symbols-outlined text-[14px] cursor-pointer">close</span>
+</span>
+<span class="bg-surface-container-highest text-primary px-3 py-1 rounded-full text-caption font-label-md flex items-center gap-1">
+                                    custom frames <span class="material-symbols-outlined text-[14px] cursor-pointer">close</span>
+</span>
+<span class="bg-surface-container-highest text-primary px-3 py-1 rounded-full text-caption font-label-md flex items-center gap-1">
+                                    display cases <span class="material-symbols-outlined text-[14px] cursor-pointer">close</span>
+</span>
+<input class="flex-1 bg-transparent border-none focus:ring-0 text-body-md p-1" placeholder="Add keyword..." type="text"/>
+</div>
+</div>
+</form>
+</div>
+<!-- Advanced Settings Card -->
+<div class="bg-surface rounded-xl p-6 border border-outline-variant/30 shadow-sm">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Advanced Settings</h2>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 bg-surface-container-low rounded-lg border border-outline-variant/20">
+<div>
+<h3 class="font-label-md text-label-md text-on-surface">Search Engine Indexing</h3>
+<p class="font-caption text-caption text-on-surface-variant">Allow search engines to index your site.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-variant rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-outline-variant after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-low rounded-lg border border-outline-variant/20">
+<div>
+<h3 class="font-label-md text-label-md text-on-surface">XML Sitemap Generation</h3>
+<p class="font-caption text-caption text-on-surface-variant">Automatically generate and update sitemap.xml.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-variant rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-outline-variant after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Preview & Actions (4 columns) -->
+<div class="lg:col-span-4 space-y-6">
+<!-- Search Result Preview -->
+<div class="bg-surface rounded-xl border border-outline-variant/30 shadow-sm overflow-hidden sticky top-8">
+<div class="bg-surface-container-highest px-4 py-3 border-b border-outline-variant/20">
+<h3 class="font-label-md text-label-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">search</span> SERP Preview
+                        </h3>
+</div>
+<div class="p-6">
+<div class="mb-2">
+<span class="text-[12px] font-caption text-on-surface-variant flex items-center gap-1">
+<div class="w-4 h-4 bg-surface-variant rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px]">language</span>
+</div>
+                                https://qualityglass.com
+                            </span>
+</div>
+<h4 class="text-[#1a0dab] font-body-lg text-body-lg mb-1 hover:underline cursor-pointer truncate">Quality Glass Emporium</h4>
+<p class="text-on-surface-variant font-caption text-[13px] leading-snug line-clamp-2">Premium artisan glass frames and custom display solutions for your most cherished memories. Explore our collection of handcrafted designs.</p>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex gap-3">
+<button class="flex-1 bg-secondary hover:bg-secondary/90 text-on-secondary font-label-md text-label-md py-2.5 px-4 rounded-lg transition-colors shadow-sm">Save Changes</button>
+<button class="flex-1 border border-primary text-primary hover:bg-surface-container-low font-label-md text-label-md py-2.5 px-4 rounded-lg transition-colors">Discard</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar for Mobile -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 rounded-t-full bg-surface/90 dark:bg-charcoal-bg/90 text-secondary dark:text-secondary-fixed font-caption text-caption backdrop-blur-xl border-t border-outline-variant/30 dark:border-outline/20 shadow-[0_-4px_10px_rgba(0,0,0,0.05)] md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-4 pt-2">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span> Home
+        </a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="grid_view">grid_view</span> Collections
+        </a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="shopping_cart">shopping_cart</span> Cart
+        </a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span> Profile
+        </a>
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-full px-5 py-1.5 hover:text-secondary dark:hover:text-secondary-fixed scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="admin_panel_settings" style="font-variation-settings: 'FILL' 1;">admin_panel_settings</span> Admin
+        </a>
+</nav>
+</body></html>
